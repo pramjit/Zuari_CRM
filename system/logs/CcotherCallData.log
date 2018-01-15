@@ -1,0 +1,20 @@
+2018-01-02 5:19:41 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE,
+mas_callstatus.STATUS_NAME AS 'STATUS', arc.CASE_PIN AS 'PIN'
+from cc_incomingcall 
+LEFT JOIN ms_mobilestate 	ON (cc_incomingcall.STATE = ms_mobilestate.stateid)
+LEFT JOIN mas_callstatus 	ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+LEFT JOIN crm_adv arc 		ON( cc_incomingcall.MOBILE = arc.FAR_MOB)
+where cc_incomingcall.CALL_TYPE=2 
+and cc_incomingcall.KEY_PRESS=1
+and cc_incomingcall.state =728 
+GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME ORDER BY DATE_RECEIVED
+2018-01-02 5:19:41 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE,
+mas_callstatus.STATUS_NAME AS 'STATUS', arc.CASE_PIN AS 'PIN'
+from cc_incomingcall 
+LEFT JOIN ms_mobilestate 	ON (cc_incomingcall.STATE = ms_mobilestate.stateid)
+LEFT JOIN mas_callstatus 	ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+LEFT JOIN crm_adv arc 		ON( cc_incomingcall.MOBILE = arc.FAR_MOB)
+where cc_incomingcall.CALL_TYPE=2 
+and cc_incomingcall.KEY_PRESS=1
+and cc_incomingcall.state =728 
+GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME ORDER BY DATE_RECEIVED

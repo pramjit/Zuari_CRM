@@ -1,0 +1,400 @@
+2017-12-26 9:47:12 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 9:47:12 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 09:47:12
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 09:47:12
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 9:47:12 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 9:48:01 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 9:48:01 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 09:48:01
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 09:48:01
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 9:48:01 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 9:48:04 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 9:48:04 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 09:48:04
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 09:48:04
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 9:48:04 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:06:56 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:06:56 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:06:56
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:06:56
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:06:56 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:07:45 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:07:45 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:07:45
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:07:45
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:07:45 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:14:16 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:14:16 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:14:15
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:14:15
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:14:16 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:14:43 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:14:43 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:14:43
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:14:43
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:14:43 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:16:52 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:16:52 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:16:51
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:16:51
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:16:52 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:29:57 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:29:57 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:29:57
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:29:57
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:29:57 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3136
+)
+
+2017-12-26 11:33:58 - SELECT cc_incomingcall.MOBILE,cc_incomingcall.STATE AS 'ADV_ST', CONCAT(cc_incomingcall.DATE_RECEIVED,' ',cc_incomingcall.TIME_RECEIVED) AS 'ADV_DATE',EGM.CUST_ID AS 'ADV_ID',AKC.land_line AS 'ADV_LL'  
+            FROM cc_incomingcall 
+            LEFT JOIN emp_geo_map EGM ON (cc_incomingcall.STATE=EGM.GEO_ID)
+            LEFT JOIN ak_customer AKC ON (EGM.CUST_ID=AKC.customer_id)
+            WHERE cc_incomingcall.MOBILE = '9971813600' and cc_incomingcall.`STATUS`='18' and cc_incomingcall.CALL_TYPE=2 and cc_incomingcall.KEY_PRESS=1
+2017-12-26 11:33:58 - stdClass Object
+(
+    [row] => Array
+        (
+            [MOBILE] => 9971813600
+            [ADV_ST] => 6
+            [ADV_DATE] => 2017-12-26 11:33:58
+            [ADV_ID] => 15
+            [ADV_LL] => 2024327080
+        )
+
+    [rows] => Array
+        (
+            [0] => Array
+                (
+                    [MOBILE] => 9971813600
+                    [ADV_ST] => 6
+                    [ADV_DATE] => 2017-12-26 11:33:58
+                    [ADV_ID] => 15
+                    [ADV_LL] => 2024327080
+                )
+
+        )
+
+    [num_rows] => 1
+)
+
+2017-12-26 11:33:58 - Array
+(
+    [stid] => 6
+    [msg] => 1
+    [land_line] => 2024327080
+    [pin] => 3288
+)
+

@@ -1,0 +1,6 @@
+2018-01-12 11:06:58 - SELECT crc.comp_mobile AS 'MOBILE', IFNULL(msm.state,'NA')AS 'STATE', DATE(mod_date) AS 'DATE_RECEIVED'
+            FROM crm_case crc
+            LEFT JOIN cc_incomingcall cci ON(crc.COMP_MOBILE = cci.MOBILE)
+            LEFT JOIN ms_mobilestate msm ON (cci.STATE=msm.stateid)
+            WHERE crc.CASE_STATUS IN (3)
+            GROUP BY crc.comp_mobile, msm.state, mod_date

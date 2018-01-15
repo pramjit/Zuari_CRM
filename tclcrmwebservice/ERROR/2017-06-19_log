@@ -1,0 +1,34 @@
+01:31:18.591 PM	ERROR [HY000] [MySQL][ODBC 5.1 Driver]Access denied for user 'zuaricrm'@'localhost' (using password: YES)
+ERROR [HY000] [MySQL][ODBC 5.1 Driver]Access denied for user 'zuaricrm'@'localhost' (using password: YES)---   at System.Data.Odbc.OdbcConnection.HandleError(OdbcHandle hrHandle, RetCode retcode)
+   at System.Data.Odbc.OdbcConnectionHandle..ctor(OdbcConnection connection, OdbcConnectionString constr, OdbcEnvironmentHandle environmentHandle)
+   at System.Data.Odbc.OdbcConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningObject)
+   at System.Data.ProviderBase.DbConnectionFactory.CreateNonPooledConnection(DbConnection owningConnection, DbConnectionPoolGroup poolGroup, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionInternal.OpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory)
+   at System.Data.Odbc.OdbcConnection.Open()
+   at tclcrmivrinsertdata.IVRdata(String mobile) in c:\inetpub\wwwroot\zuari\tclcrmwebservice\App_Code\tclcrmivrinsertdata.cs:line 51
+01:32:01.591 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9910'
+01:32:01.857 PM	in---728
+01:32:01.857 PM	6
+01:34:25.400 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9910'
+01:34:25.416 PM	in---728
+01:34:25.416 PM	6
+01:35:50.932 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9910'
+01:35:50.963 PM	in---728
+01:35:50.963 PM	6
+02:47:05.845 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9910'
+02:47:06.173 PM	in---728
+02:47:06.173 PM	6
+02:50:36.080 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9910'
+02:50:36.095 PM	in---728
+02:50:36.095 PM	6
+09:51:59.262 PM	SELECT stateid FROM ms_mobilestate where mobilecode='7697'
+09:51:59.512 PM	in---728
+09:51:59.512 PM	15
+09:52:10.059 PM	SELECT stateid FROM ms_mobilestate where mobilecode='7697'
+09:52:10.059 PM	in---728
+09:52:10.075 PM	15
+09:53:55.262 PM	SELECT stateid FROM ms_mobilestate where mobilecode='7697'
+09:53:55.279 PM	in---728
+09:53:55.279 PM	15

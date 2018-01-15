@@ -1,0 +1,9 @@
+08:42:07.147 AM	SELECT stateid FROM ms_mobilestate where mobilecode='7697'
+08:42:07.444 AM	in---728
+08:42:07.460 AM	15
+12:09:00.779 PM	SELECT stateid FROM ms_mobilestate where mobilecode='9717'
+12:09:01.169 PM	in---728
+12:09:01.185 PM	6
+07:52:32.602 PM	SELECT stateid FROM ms_mobilestate where mobilecode='7697'
+07:52:32.993 PM	in---728
+07:52:33.008 PM	15

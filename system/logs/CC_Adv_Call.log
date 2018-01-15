@@ -1,0 +1,9 @@
+2018-01-12 11:07:01 - select crm_adv.CASE_ID,crm_adv.FAR_MOB,crm_adv.CASE_PIN,crm_adv.TOT_ATTEMPT,mas_callstatus.status_name as 'STATUS',mas_pol_geo.STATE_CODE as 'STATE'
+from crm_adv 
+left join mas_callstatus on(crm_adv.case_status=mas_callstatus.status_id)
+left join cc_incomingcall on(crm_adv.FAR_MOB = cc_incomingcall.mobile)
+left join mas_pol_geo on(cc_incomingcall.state=mas_pol_geo.geo_id)
+where crm_adv.case_status in(27) 
+and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='18')
+and crm_adv.call_from <> '' and file_sync=1 and cc_attend=0
+and crm_adv.tot_attempt < 3  group by crm_adv.CASE_ID order by crm_adv.CALL_DATE DESC

@@ -1,0 +1,20 @@
+<?php
+
+$_['heading_title']                = 'Attendance Report';
+$_['button_save']                  ='Save';
+$_['button_back']                  ='Back';
+$_['text_list']                    ='Search';
+$_['entry_name']                   ='Product name';
+$_['entry_model']                  ='entry model';
+$_['entry_price']                  ='entry price';
+$_['entry_status']                 =' Search Geo Name';
+
+$_['column_district']                   ='State';
+$_['column_market']              ='Market';
+$_['column_mdo_name']              ='Mdo Name';
+$_['column_date']                ='Date';
+$_['column_act']                 ='ACT';
+$_['column_remarks']                   ='Remarks';
+$_['column_season_name']           ='Season Name';
+
+

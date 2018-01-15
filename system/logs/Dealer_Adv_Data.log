@@ -1,0 +1,24 @@
+2018-01-15 5:09:52 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:14:44 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:16:41 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:17:26 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:17:28 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:17:29 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:17:30 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
+2018-01-15 5:23:07 - SELECT ak_dealer.DEL_MOB AS 'FAR_MOB' FROM ak_dealer
+        LEFT JOIN cc_incomingcall ON(ak_dealer.DEL_MOB=cc_incomingcall.MOBILE)
+        WHERE cc_incomingcall.CC_LIVE=2
