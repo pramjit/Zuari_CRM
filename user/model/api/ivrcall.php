@@ -75,6 +75,9 @@ class Modelapiivrcall extends Model {
                 
             //*************************Insert Record In crm_adv**********************//    
             }
+                if($adv_ll=='9008388365'){
+                    $adv_ll=1;
+                }
                 $suc=array("stid"=>$adv_st,"msg"=>1,"land_line"=>$adv_ll,"pin"=>$cpin);
                 $log->write($suc);
 		return $suc;
@@ -180,6 +183,9 @@ class Modelapiivrcall extends Model {
                     $suc=$this->db->countAffected();
                     if($suc==1)
                     {
+                        if($adv_ll=='9008388365'){
+                            $adv_ll=1;
+                        }
                         $suc=array("stid"=>$stid,"msg"=>1,"land_line"=>$adv_ll,"pin"=>$cpin);
                         return $suc;
                     }
@@ -205,6 +211,7 @@ class Modelapiivrcall extends Model {
                         $adv_ll=$query->row['CUST_LL'];
                         
                         if($stid==728){$adv_ll=8772244865;}
+                        if($adv_ll=='9008388365'){ $adv_ll=1;}
                         $suc=array("stid"=>$stid,"msg"=>1,"land_line"=>$adv_ll,"pin"=>$cpin);
                         return $suc;
                     }
@@ -355,3 +362,4 @@ class Modelapiivrcall extends Model {
             
 }
 
+ 
