@@ -4,7 +4,7 @@ class ControllerApiSyncFile extends Controller {
 		$this->load->model('api/SyncFile');
 		//echo 'Calling';
 		$date=date('Ymd');
-        $log=new Log("SyncFile".$date.".log");
+                $log=new Log("SyncFile".$date.".log");
 		/*
         $log->write('Calling');
 		$log->write($_POST);

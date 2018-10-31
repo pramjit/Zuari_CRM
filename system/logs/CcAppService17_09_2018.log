@@ -1,0 +1,81 @@
+2018-09-17 9:51:20 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 
+    [app-md] => 
+    [app-usr] => Ankur
+    [app-pro] => NA
+    [app-ser] => 5
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 
+    [app-sol] => 
+    [app-cal] => 2
+    [app-cid] => 1111111197
+    [app-frm] => 7053625440
+    [app-up-by] => 18
+)
+
+2018-09-17 9:51:20 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-09-17 9:51:20 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-09-17 9:54:54 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 
+    [app-md] => 
+    [app-usr] => Ankur
+    [app-pro] => NA
+    [app-ser] => 5
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 
+    [app-sol] => 
+    [app-cal] => 2
+    [app-cid] => 1111111197
+    [app-frm] => 7053625440
+    [app-up-by] => 18
+)
+
+2018-09-17 9:54:54 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-09-17 9:54:54 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-09-17 9:58:23 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 
+    [app-md] => 
+    [app-usr] => Ankur
+    [app-pro] => NA
+    [app-ser] => 5
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 
+    [app-sol] => 
+    [app-cal] => 2
+    [app-cid] => 1111111197
+    [app-frm] => 7053625440
+    [app-up-by] => 18
+)
+
+2018-09-17 9:58:23 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-09-17 9:58:23 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+

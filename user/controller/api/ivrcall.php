@@ -6,9 +6,9 @@ class ControllerApiivrcall extends Controller {
         $log=new Log("ApiIvrCall".date('d_m_Y').".log");
         $log->write($this->request->get);
         //$mcrypt = new MCrypt(); 
-        $mob=$this->request->get['mob'];        //Farmer Mobile Callfrom
+        $mob=$this->request->get['mob'];        // Farmer Mobile Callfrom
         $log->write($mob);
-        $code=$this->request->get['code'];      //Key Press 1/2 InCase Of Type 2
+        $code=$this->request->get['code'];      // Key Press 1/2 InCase Of Type 2
         $log->write($code);
         $type=$this->request->get['type'];      // 2-(Advisory/Complaint Call) 3-
         $log->write($type);

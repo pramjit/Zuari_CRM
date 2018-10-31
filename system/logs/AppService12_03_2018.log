@@ -1,0 +1,833 @@
+2018-03-12 9:24:51 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50170
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 342
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZHG3TZovUtDLNHpvV7QwAAAEo
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846619.2458
+            [REQUEST_TIME] => 1520846619
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 9:25:20 - {"ID":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 9:25:21 - Array
+(
+    [ID] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 9:26:16 - {"Res":0,"Msg":"Missing mandatory pararmeters either ServiceType or StateId or Mobile"}
+2018-03-12 9:28:13 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50182
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZH6eovKkK2@hcKzA5fEAAAAJE
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846826.0167
+            [REQUEST_TIME] => 1520846826
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 9:28:14 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 9:28:15 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 9:28:32 - Model Data: Array
+2018-03-12 9:29:56 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='Delhi',
+			`StateName`='NA',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 09:28:37',
+			`UpDate`='2018-03-12 09:28:37',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 9:29:57 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 10:20:50 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 34426
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZUgmGyOtGoFkotzxAZTAAAAEI
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520850050.6279
+            [REQUEST_TIME] => 1520850050
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 10:20:50 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 10:20:50 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 10:20:50 - Model Data: Array
+2018-03-12 10:20:50 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 10:20:50 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 10:20:50',
+			`UpDate`='2018-03-12 10:20:50',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 10:20:51 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 10:40:24 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 34838
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZZGC@r6mrLihRy0rOfWwAAAAQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520851224.7105
+            [REQUEST_TIME] => 1520851224
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 10:40:24 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 10:40:24 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 10:40:24 - Model Data: Array
+2018-03-12 10:40:24 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 10:40:24 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 10:40:24',
+			`UpDate`='2018-03-12 10:40:24',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 10:40:24 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 10:42:12 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 34882
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZZQxup32e1ud5FC0BRswAAAIQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520851267.0799
+            [REQUEST_TIME] => 1520851267
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 10:42:13 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 10:42:13 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 10:42:26 - Model Data: Array
+2018-03-12 10:42:45 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 10:42:52 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 10:42:26',
+			`UpDate`='2018-03-12 10:42:26',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 10:42:52 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 11:39:20 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 34908
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZZtBup32e1ud5FC0BRtAAAAIc
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520851380.5654
+            [REQUEST_TIME] => 1520851380
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 11:39:20 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 11:39:20 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 11:39:32 - Model Data: Array
+2018-03-12 11:39:34 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 11:42:08 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='6',
+			`StateName`='DELHI',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 11:39:32',
+			`UpDate`='2018-03-12 11:39:32',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 11:42:15 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 11:46:45 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 36514
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZopWGyOtGoFkotzxAZVQAAAFg
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520855205.1738
+            [REQUEST_TIME] => 1520855205
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 11:46:45 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 11:46:45 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 11:46:45 - Model Data: Array
+2018-03-12 11:46:45 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 11:46:45 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='6',
+			`StateName`='DELHI',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 11:46:45',
+			`UpDate`='2018-03-12 11:46:45',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 11:46:45 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}
+2018-03-12 11:47:56 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 36554
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 351
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZo7GGyOtGoFkotzxAZVwAAAEE
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520855276.6571
+            [REQUEST_TIME] => 1520855276
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ServiceType&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;Delhi&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 11:47:56 - {"ServiceType":"1","StateId":"Delhi","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 11:47:56 - Array
+(
+    [ServiceType] => 1
+    [StateId] => Delhi
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 11:47:56 - Model Data: Array
+2018-03-12 11:47:56 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%Delhi%' LIMIT 0,1
+2018-03-12 11:47:56 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='6',
+			`StateName`='DELHI',
+			`Mobile`='9971813600',
+			`QueryId`='1',
+			`Query`='NA',
+			`ProductId`='11',
+			`ProductName`='Mango',
+			`OrderId`='1000',
+			`Quantity`='5',
+			`ImageUrl1`='http://abc.com/image/image.png',
+			`ImageUrl2`='http://abc.com/image/image.png',
+			`CustomerName`='Test User',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-03-12 11:47:56',
+			`UpDate`='2018-03-12 11:47:56',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-03-12 11:47:56 - {"Res":1,"Msg":"Data have been recived for mobile: 9971813600 with State Id: Delhi and Service Type: 1"}

@@ -200,6 +200,16 @@ public function regionlist(){
                 }
         echo "</select>";
     }
+    public function dmolist(){
+        $this->load->model('farmer/register');
+        $MoData= $this->model_farmer_register->MoData($this->request->post['dtid']);
+        echo "<select name='dmooffice' id='dmooffice' class='form-control select2'>";
+        echo "<option value=''>Select MO Office</option>";
+                    foreach($MoData as $data){
+                echo "<option value=".$data['MO_ID'].">".$data['MO_NAME']."</option>";
+                }
+        echo "</select>";
+    }
     public function distlist(){
     $this->load->model('farmer/register');
    
@@ -295,7 +305,7 @@ public function ddistlist(){
    // $a = $this->request->post['stsid'];
     $DistData= $this->model_farmer_register->DistData($this->request->post['stsid']);
     //print_r( $DistData);
-                echo"<select id='dseldt' name='dseldt' class='form-control select2-selection--single'><option value=''>SELECT DISTRICT</option>";
+                echo"<select id='dseldt' name='dseldt' class='form-control select2' onchange='dshowmo(this.value)'><option value=''>SELECT DISTRICT</option>";
                 foreach($DistData as $dist){
                 echo "<option value=".$dist['GEO_ID'].">".$dist['NAME']."</option>";
                 }
@@ -445,7 +455,8 @@ public function complist(){
 	//*****************************MAIL FUNCTION END***********************************************//
         $this->load->model('farmer/register');
         //****************** FARMER TAB DATA *******************//
-        /*$zone = $this->request->post['zone'];
+        /*
+        $zone = $this->request->post['zone'];
         $region = $this->request->post['region'];
         $state= $this->request->post['state'];
         $district= $this->request->post['district'];
@@ -521,6 +532,22 @@ public function complist(){
 			Best Regards,<br>
 			Support- Adventz Agri CRM";
                 MsgToMail($ramid,$cc,$sub,$msg);
+                echo 1;
+            }
+            else if($CaseMail['FLAG']==293031){
+                $url= 'zuari.akshapp.com';
+               // $cc='asad.ahmed@adventz.com';
+                $sub='Complaint '.$caseid.': Resolution required';
+                $msg='Dear '.$raname.', <br><br><br>
+                Complaint '.$caseid.' has been registered. <br><br>
+                The complaint can be accessed through  '.$url.'<br><br>
+                The expected Resolution date for this complaint is 2 working  days post complaint logging date.<br><br><br>
+                Thanks and Regards,<br>
+                Support- Adventz Agri CRM';
+                MsgToMail($ramid,$cc,$sub,$msg);
+                echo 1;
+            }
+            else if($CaseMail['FLAG']==1){
                 echo 1;
             }
             else{
@@ -711,10 +738,10 @@ public function complist(){
         }
         $StateData= $this->model_farmer_register->StateData();
         $DistData= $this->model_farmer_register->DistData($State_ID_Local);
-        $MoData= $this->model_farmer_register->MoData();
+        //$MoData= $this->model_farmer_register->MoData();
         $CropData=$this->model_farmer_register->CropData();
         $ZoneData=$this->model_farmer_register->ZoneData();
-        $RegionData=$this->model_farmer_register->RegionData();
+        //$RegionData=$this->model_farmer_register->RegionData();
         
         
        		$raw.='<div class="form-group">';

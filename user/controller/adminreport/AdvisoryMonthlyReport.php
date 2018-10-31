@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 class ControlleradminreportAdvisoryMonthlyReport extends Controller 
 {
     public function  index(){
@@ -154,13 +156,15 @@ class ControlleradminreportAdvisoryMonthlyReport extends Controller
             //*****************************************************************************************//
        
             //
-            //$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
-            //header('Content-Type: application/vnd.ms-excel');
-            //header('Content-Disposition: attachment;filename="COMPLAINT_Report'.date('dMy').'.xls"');
-            //header('Cache-Control: max-age=0');
-            //$objWriter->save('php://output');
-			if(count($CallIn)!=0 || count($CallOut)!=0){
+            PHPExcel_Settings::setZipClass(PHPExcel_Settings::PCLZIP);
+            $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
+            header('Content-Type: application/vnd.ms-excel');
+            header('Content-Disposition: attachment;filename="COMPLAINT_Report'.date('dMy').'.xls"');
+            header('Cache-Control: max-age=0');
+            $objWriter->save('php://output');
+		if(count($CallIn)!=0 || count($CallOut)!=0){
                 $xlsName='ADL'.$AdlID.'_MONTHLY_REPORT'.date('dmY_His').$i.".xls";
+                PHPExcel_Settings::setZipClass(PHPExcel_Settings::PCLZIP);
                 $objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel2007');
                 $filename = DIR_DOWNLOAD.$xlsName;
                 $objWriter->save($filename);

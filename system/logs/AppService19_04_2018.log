@@ -1,0 +1,537 @@
+2018-04-19 5:13:00 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 37588
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 8da3a11d-3a21-7c52-b928-3221c3775c5f
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WtglW2YLBvMTQTc6nZ84lAAAAIs
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1524114780.3691
+            [REQUEST_TIME] => 1524114780
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-04-19 5:13:00 - {"ServiceType":"1","StateId":"9","Mobile":"12131415"}
+
+
+
+2018-04-19 5:13:00 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 9
+    [Mobile] => 12131415
+)
+
+2018-04-19 5:13:00 - Model Data: Array
+2018-04-19 5:13:00 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%9%' LIMIT 0,1
+2018-04-19 5:13:00 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='12131415',
+			`QueryId`='0',
+			`Query`='NA',
+			`ProductId`='0',
+			`ProductName`='NA',
+			`OrderId`='0',
+			`Quantity`='0.00',
+			`ImageUrl1`='NA',
+			`ImageUrl2`='NA',
+			`CustomerName`='NA',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-04-19 05:13:00',
+			`UpDate`='2018-04-19 05:13:00',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-04-19 5:13:00 - {"Res":1,"Msg":"Data have been recived for mobile: 12131415 with State: 9 and Service Type: 1"}
+2018-04-19 5:14:36 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [PHPSESSID] => k56dv3ofps6innnqudlu3jr59f
+            [language] => en
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 37630
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => PHPSESSID=k56dv3ofps6innnqudlu3jr59f; language=en
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => f5b28399-5fe8-95c3-64ee-bb23d75a88e6
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WtgluIJT9eUkQOsYeNuLxAAAAFg
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1524114872.5942
+            [REQUEST_TIME] => 1524114872
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-04-19 5:14:36 - {"ServiceType":"1","StateId":"9","Mobile":"12131416"}
+
+
+
+2018-04-19 5:14:36 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 9
+    [Mobile] => 12131416
+)
+
+2018-04-19 5:14:39 - Model Data: Array
+2018-04-19 5:14:39 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%9%' LIMIT 0,1
+2018-04-19 5:14:39 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='12131416',
+			`QueryId`='0',
+			`Query`='NA',
+			`ProductId`='0',
+			`ProductName`='NA',
+			`OrderId`='0',
+			`Quantity`='0.00',
+			`ImageUrl1`='NA',
+			`ImageUrl2`='NA',
+			`CustomerName`='NA',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-04-19 05:14:39',
+			`UpDate`='2018-04-19 05:14:39',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-04-19 5:14:39 - {"Res":1,"Msg":"Data have been recived for mobile: 12131416 with State: 9 and Service Type: 1"}
+2018-04-19 5:14:58 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [PHPSESSID] => k56dv3ofps6innnqudlu3jr59f
+            [language] => en
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 37634
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => PHPSESSID=k56dv3ofps6innnqudlu3jr59f; language=en
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 8bb5c69d-558d-cbe1-3469-af224f884d47
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wtgl0IJT9eUkQOsYeNuLxwAAAEM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1524114896.8249
+            [REQUEST_TIME] => 1524114896
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-04-19 5:14:58 - {"ServiceType":"1","StateId":"9","Mobile":"12131417"}
+
+
+
+2018-04-19 5:14:58 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 9
+    [Mobile] => 12131417
+)
+
+2018-04-19 5:16:05 - Model Data: Array
+2018-04-19 5:16:07 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%9%' LIMIT 0,1
+2018-04-19 5:16:17 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='12131417',
+			`QueryId`='0',
+			`Query`='NA',
+			`ProductId`='0',
+			`ProductName`='NA',
+			`OrderId`='0',
+			`Quantity`='0.00',
+			`ImageUrl1`='NA',
+			`ImageUrl2`='NA',
+			`CustomerName`='NA',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-04-19 05:16:06',
+			`UpDate`='2018-04-19 05:16:06',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-04-19 5:18:07 - {"Res":1,"Msg":"Data have been recived for mobile: 12131417 with State: 9 and Service Type: 1"}
+2018-04-19 5:18:36 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [PHPSESSID] => k56dv3ofps6innnqudlu3jr59f
+            [language] => en
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 37658
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => PHPSESSID=k56dv3ofps6innnqudlu3jr59f; language=en
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => c4bd10e1-2fae-595c-ee62-a58428985218
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WtgmrIJT9eUkQOsYeNuLyAAAAEs
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1524115116.2484
+            [REQUEST_TIME] => 1524115116
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-04-19 5:18:36 - {"ServiceType":"1","StateId":"9","Mobile":"12131417"}
+
+
+
+2018-04-19 5:18:36 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 9
+    [Mobile] => 12131417
+)
+
+2018-04-19 5:18:36 - Model Data: Array
+2018-04-19 5:18:36 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%9%' LIMIT 0,1
+2018-04-19 5:18:36 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='12131417',
+			`QueryId`='0',
+			`Query`='NA',
+			`ProductId`='0',
+			`ProductName`='NA',
+			`OrderId`='0',
+			`Quantity`='0.00',
+			`ImageUrl1`='NA',
+			`ImageUrl2`='NA',
+			`CustomerName`='NA',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-04-19 05:18:36',
+			`UpDate`='2018-04-19 05:18:36',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-04-19 5:18:36 - {"Res":1,"Msg":"Data have been recived for mobile: 12131417 with State: 9 and Service Type: 1"}
+2018-04-19 5:20:19 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [PHPSESSID] => k56dv3ofps6innnqudlu3jr59f
+            [language] => en
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 37676
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => PHPSESSID=k56dv3ofps6innnqudlu3jr59f; language=en
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 78be7841-6c62-4fe1-fb08-e50d1644b221
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WtgnE2YLBvMTQTc6nZ84lwAAAIA
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1524115219.8011
+            [REQUEST_TIME] => 1524115219
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-04-19 5:20:19 - {"ServiceType":"1","StateId":"9","Mobile":"12131417"}
+
+
+
+2018-04-19 5:20:19 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 9
+    [Mobile] => 12131417
+)
+
+2018-04-19 5:20:19 - Model Data: Array
+2018-04-19 5:20:19 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE `NAME` LIKE '%9%' LIMIT 0,1
+2018-04-19 5:20:19 - Query Data: INSERT INTO app_services SET
+			`ServiceType`='1',
+			`StateId`='728',
+			`StateName`='OTHER',
+			`Mobile`='12131417',
+			`QueryId`='0',
+			`Query`='NA',
+			`ProductId`='0',
+			`ProductName`='NA',
+			`OrderId`='0',
+			`Quantity`='0.00',
+			`ImageUrl1`='NA',
+			`ImageUrl2`='NA',
+			`CustomerName`='NA',
+			`StoreAssigned`='0',
+			`StoreName`='NA',
+			`CrDate`='2018-04-19 05:20:19',
+			`UpDate`='2018-04-19 05:20:19',
+			`CrBy`='100',
+			`UpBy`='0'
+2018-04-19 5:20:19 - {"Res":1,"Msg":"Data have been recived for mobile: 12131417 with State: 9 and Service Type: 1"}

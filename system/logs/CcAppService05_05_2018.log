@@ -1,0 +1,149 @@
+2018-05-05 4:56:39 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mahesh pawar
+    [app-pro] => NA
+    [app-ser] => 4
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => Test Query
+    [app-ans] => 1
+    [app-sol] => Test Solution
+    [app-cal] => 1
+    [app-cid] => 1111111566
+    [app-frm] => 7507704912
+    [app-up-by] => 17
+)
+
+2018-05-05 4:59:18 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-05-05 4:59:18 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-05-05 4:59:20 - Query Data: UPDATE app_services SET
+		`ServiceType`='4',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='NA',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mahesh pawar',
+		`StoreName`='NA',
+		`UpDate`='2018-05-05',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1, `CallStatus`=2 WHERE SID='1111111566'
+2018-05-05 4:59:43 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-05-05 4:59:44 - Find MO ID: 
+2018-05-05 4:59:44 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18050504594403',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='7507704912',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-05-05 04:56:43',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-05-05',
+                        `COMPLAINT_QUERY` ='Test Query',
+                        `COMPLAINT_REMARKS` ='Test Solution',`COMP_SOURCE`=2
+2018-05-05 4:59:44 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18050504594403',`CASE_MOBILE` = '7507704912',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-05-05',`UPDATE_TIME` = '04:56:43'
+2018-05-05 5:33:17 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mahesh pawar
+    [app-pro] => NA
+    [app-ser] => 4
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => O'really
+    [app-ans] => 1
+    [app-sol] => Sample Answer's
+    [app-cal] => 1
+    [app-cid] => 1111111565
+    [app-frm] => 7507704912
+    [app-up-by] => 17
+)
+
+2018-05-05 5:33:17 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-05-05 5:33:17 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-05-05 5:33:17 - Query Data: UPDATE app_services SET
+		`ServiceType`='4',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+                `Query`='O\'really', 
+		`ProductName`='NA',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mahesh pawar',
+		`StoreName`='NA',
+		`UpDate`='2018-05-05',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1, `CallStatus`=2 WHERE SID='1111111565'
+2018-05-05 5:33:17 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-05-05 5:33:17 - Find MO ID: 
+2018-05-05 5:33:17 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18050505331799',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='7507704912',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-05-05 05:33:17',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-05-05',
+                        `COMPLAINT_QUERY` ='O\'really',
+                        `COMPLAINT_REMARKS` ='Sample Answer\'s',`COMP_SOURCE`=2
+2018-05-05 5:33:18 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18050505331799',`CASE_MOBILE` = '7507704912',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-05-05',`UPDATE_TIME` = '05:33:17'

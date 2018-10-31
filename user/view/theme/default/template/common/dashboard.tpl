@@ -4,7 +4,7 @@
     <!-- Top Bar Starts -->
     <div class="top-bar clearfix">
         <div class="page-title">
-	<h4><div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>Dashboard</h4>
+	<h4><div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>Dashboard ADMIN</h4>
 	</div>
             <!--<ul class="right-stats hidden-xs" id="mini-nav-right">
                 <li class="reportrange btn btn-success">

@@ -1,4 +1,1348 @@
-2018-01-02 4:32:49 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+2018-01-27 4:12:56 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-27 4:39:34 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-27 4:39:49 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-27 4:40:21 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-27 4:40:52 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-27 4:41:18 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 4:07:40 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 4:18:22 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 8:29:28 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:11:26 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:15:07 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:15:41 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:16:10 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:46:22 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 9:46:25 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 10:04:55 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:24:25 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:30:14 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:42:43 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:44:07 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:50:17 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 11:53:33 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 12:00:24 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 12:01:09 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-29 12:02:35 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-30 3:52:00 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-30 4:56:04 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-01-30 5:15:29 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 4:29:11 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 4:33:44 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 4:35:16 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 5:39:02 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 5:51:39 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:12:40 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:14:25 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:17:24 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:19:31 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:41:31 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 6:42:43 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 9:30:50 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-06 9:31:47 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-07 4:56:48 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-07 4:57:42 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-07 4:59:53 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 4:35:44 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 4:39:45 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 4:40:38 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 4:43:16 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 4:50:09 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:14:10 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:17:49 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:18:59 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:21:36 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:23:34 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:27:13 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:27:18 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:35:18 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:35:23 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:35:28 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:36:40 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:41:52 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:42:50 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:47:35 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:49:18 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:56:59 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 5:58:23 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:02:59 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:11:30 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:35:37 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:38:05 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:39:15 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:40:46 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 6:47:54 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 8:41:13 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 8:43:15 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:16:23 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:17:57 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:33:26 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:33:35 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:33:57 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:35:15 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:39:42 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-08 9:40:57 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-16 4:25:38 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-16 5:24:20 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-16 5:24:24 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-16 10:32:43 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 10:45:11 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 10:52:12 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 10:57:27 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 11:00:51 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 11:03:12 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-03-17 11:04:11 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-04-02 5:02:05 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-04-02 5:02:12 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='10')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-04-02 5:02:45 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-01 6:50:47 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
             from cc_incomingcall
             LEFT JOIN ms_mobilestate 
             ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
@@ -11,8 +1355,8 @@
 						and cc_incomingcall.KEY_PRESS=2 
 						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='18')
                                                 and TOT_ATTEMPT < 3
-            GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME
-2018-01-08 3:58:18 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            GROUP BY MOBILE
+2018-06-01 6:50:52 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
             from cc_incomingcall
             LEFT JOIN ms_mobilestate 
             ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
@@ -25,8 +1369,8 @@
 						and cc_incomingcall.KEY_PRESS=2 
 						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='18')
                                                 and TOT_ATTEMPT < 3
-            GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME
-2018-01-12 11:06:56 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            GROUP BY MOBILE
+2018-06-01 6:52:30 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
             from cc_incomingcall
             LEFT JOIN ms_mobilestate 
             ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
@@ -39,4 +1383,116 @@
 						and cc_incomingcall.KEY_PRESS=2 
 						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='18')
                                                 and TOT_ATTEMPT < 3
-            GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME
+            GROUP BY MOBILE
+2018-06-02 5:30:50 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='2')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-02 5:31:41 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-02 5:32:02 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='18')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-02 11:49:50 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-02 11:49:54 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-06-02 11:50:02 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-08-17 9:41:40 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='17')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE
+2018-09-19 4:34:23 - select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='1')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE

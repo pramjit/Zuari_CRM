@@ -1,0 +1,616 @@
+2018-04-23 5:25:58 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:47:52 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:48:17 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:48:55 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:49:18 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:49:32 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:49:58 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:50:52 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:51:37 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:53:30 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 5:54:13 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:21:58 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:26:38 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:27:00 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:27:19 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:29:23 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:29:40 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:29:47 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:29:53 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:31:11 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:24 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:25 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:26 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:26 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:27 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:27 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:27 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:28 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT'
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:35:39 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:36:00 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:29 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:31 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType<>2
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:34 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType NOT IN(2,3,4) AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:35 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType NOT IN(2,3,4) AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:36 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType NOT IN(2,3,4) AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 6:37:37 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+	    LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0 AND ServiceType NOT IN(2,3,4) AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 7:24:43 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE 
+                StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) 
+		AND ServiceStatus=0 
+		AND ServiceType NOT IN(2,3,4) 
+		AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-04-23 12:25:30 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE 
+                StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) 
+		AND ServiceStatus=0 
+		AND ServiceType NOT IN(2,3,4) 
+		AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC

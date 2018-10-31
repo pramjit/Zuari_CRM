@@ -5,8 +5,8 @@ public function  index(){
         $FarData= $this->model_api_CcSync->getFarData();
         $AdvData= $this->model_api_CcSync->getAdvData();
         $DelData= $this->model_api_CcSync->getDelData();
-        
-        $CcData=array_unique(array_merge($FarData,$AdvData,$DelData), SORT_REGULAR);
+        $IncData= $this->model_api_CcSync->getIncData();
+        $CcData=array_unique(array_merge($FarData,$AdvData,$DelData,$IncData), SORT_REGULAR);
        
         //Function Get Farmer Data
         function getFarmerData($data_string){

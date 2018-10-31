@@ -6,7 +6,7 @@ class Modelcallfeedback extends Model {
     
     $log=new Log("feedback.log");
          
-        $sql="SELECT crc.comp_mobile AS 'MOBILE', IFNULL(msm.state,'NA')AS 'STATE', DATE(mod_date) AS 'DATE_RECEIVED'
+        $sql="SELECT crc.case_id  AS 'CASE_ID', crc.comp_mobile AS 'MOBILE', IFNULL(msm.state,'NA')AS 'STATE', DATE(mod_date) AS 'DATE_RECEIVED'
             FROM crm_case crc
             LEFT JOIN cc_incomingcall cci ON(crc.COMP_MOBILE = cci.MOBILE)
             LEFT JOIN ms_mobilestate msm ON (cci.STATE=msm.stateid)
@@ -434,9 +434,9 @@ class Modelcallfeedback extends Model {
     
     public function FeedFarData($data)
     {
-        $mob=$data['mob'];
+        $caseid=$data['caseid'];
         $log=new Log("feedfardata.log");
-        $sql="select 
+       /* $sql="select 
                     crf.FAR_NAME,
                     crf.FAR_FAT_NAME,
                     crf.FAR_ALT_NUMBER,
@@ -459,16 +459,27 @@ class Modelcallfeedback extends Model {
                     crc.COMP_TYPE,
                     crc.COMPLAINT_REMARKS,
                     crc.CASE_ID
-                    from crm_farmer crf
+                    from ak_farmer crf
                     left join crm_case crc on(crf.far_mobile = crc.comp_mobile)
                     where crf.far_mobile='".$mob."'";
-        $log->write($mob);
+        *
+        */
+        $sql="SELECT CRC.CASE_ID AS 'COMP_FAR', CRC.COMP_MOBILE AS 'COMP_MOB', CRC.COMPLAINT_QUERY AS 'COMP_QRY', CRC.COMP_RA,
+        AKR.firstname AS 'RA_NAME', CRC.COMP_AA,AKA.firstname AS 'AA_NAME',
+        DATE(CRC.CR_DATE) AS 'COMP_DATE',CRD.RA_REMARKS,CRD.RA_DATE,CRD.AA_REMARKS,CRD.AA_DATE
+        FROM crm_case CRC 
+        LEFT JOIN crm_case_detail CRD ON(CRC.CASE_ID=CRD.CASE_ID)
+        LEFT JOIN ak_customer AKR ON (CRC.COMP_RA = AKR.customer_id)
+        LEFT JOIN ak_customer AKA ON (CRC.COMP_AA = AKA.customer_id)
+        WHERE CRC.CASE_ID='".$caseid."' AND CRD.CASE_PRE_STATUS=2 AND CASE_CUR_STATUS=5 GROUP BY CRC.CASE_ID";
+        $log->write($caseid);
         $log->write($sql);
         $query = $this->db->query($sql);
         return $query->row;
     }
     public function subccdata($data){
         $caseid=$data['fed-case-id'];
+        $casemob=$data['fed-case-mob'];
         $remarks=$data['fed-cc-remarks'];
 	$remarks=str_replace("'","",$remarks);
         $satisfy=$data['fed-satisfy'];
@@ -528,7 +539,7 @@ class Modelcallfeedback extends Model {
         $this->db->query($sql);
         $ret_id = $this->db->countAffected();  
         if($ret_id==1){
-            $sql="update crm_case set case_status='8', COMPLAINT_FEEDBACK='".$remarks."',COMPLAINT_SATISFY='".$satisfy."' where case_id='".$caseid."'";
+            $sql="update crm_case set case_status='99', COMPLAINT_FEEDBACK='".$remarks."',COMPLAINT_SATISFY='".$satisfy."' where case_id='".$caseid."' and comp_mobile='".$casemob."'";
             $this->db->query($sql);
             $ret_id2 = $this->db->countAffected();
             if($ret_id2==1){

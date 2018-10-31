@@ -127,6 +127,7 @@
                 </div>
                 <div class="col-md-2">
                     <input type="button" class="btn btn-primary subprodata" value="SUBMIT" onclick="subprodata();">
+					<!--<label class=" btn btn-primary subprodata" for="selectbasic" onclick="subprodata();">SUBMIT</label>-->
                 </div>
                 </div>
                 </div>
@@ -177,11 +178,18 @@
                                 </div>
                                 <div class="col-md-4" id="ddist-data">
                                     <div class="abc">*</div>
-                                <select id="dseldt" name="dseldt" class="form-control select2-selection--single">
+                                <select id="dseldt" name="dseldt" class="form-control select2" onchange="dshowmo(this.value)">
                                     <option value="">SELECT DISTRICT</option>
                                    
                                 </select>
                                 </div>
+                                <div class="col-md-4" id="dmo-data">
+                                    <select name="dmooffice" id="dmooffice" class="form-control select2">
+                                        <option value="0">Select Mo</option>
+                                        
+                                    </select>
+                                </div>
+                                
                                 <div class="col-md-4">
                                     <div class="abc">*</div>
                                 <select id="del-cat" name="del-cat" class="form-control">
@@ -197,7 +205,7 @@
                             <div class="form-group">
                                 <div class="col-md-4">
                                     <input type="hidden" class="form-control" id="del-pin" name="del-pin" MaxLength="6"  placeholder="PINCODE" onkeypress="return event.charCode >= 48 &amp;&amp; event.charCode <= 57 || event.keyCode==8 || event.keyCode==46" >
-                                    <div class="abc">*</div>
+                                    <!--<div class="abc">*</div>-->
                                     <input type="text" class="form-control" id="del-adv-code" name="del-adv-code" MaxLength="10"  placeholder="DEALER ADVENTZ CODE">
                                 </div>
                                 <div class="col-md-4">
@@ -243,8 +251,9 @@
                         <!-- Text input-->
                             <div class="form-group" id="pro-sec">
                                 <div class="col-md-4">
-                                <div class="abc">*</div>
+                                
                                 <div id="prod-grp">
+                                    
                                 <select id="progrp" name="progrp" class="form-control select2" onchange="showprocat(this.value);">
                                     <option value="">Select Product Group</option>
                                     <?php foreach($ProdCatData as $pcat){ ?>
@@ -255,7 +264,7 @@
                                 </div>
                             
                             <div class="col-md-4">
-                                <div class="abc">*</div>
+                                
                                 <div id="prod-cat">
                                 <select id="procat" name="procat" class="form-control select2">
                                     <option value="">Select Product Category</option>
@@ -263,7 +272,7 @@
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="abc">*</div>
+                                
                                 <div id="prod-data">
                                 <select id="pro-name" name="pro-name" class="form-control select2">
                                     <option value="">Select Product</option>
@@ -298,14 +307,27 @@
                                 <input type="text" class="form-control" id="pro-pkg-my" name="pro-pkg-my"  placeholder="Month/Year of Manufacture/Packiging">
                                 
                             </div>
-							<div class="col-md-4"></div>
+                            <div class="col-md-4"></div>
                             </div>
-                        <div class="clearfix"></div>
-						<div class="form-group">
-                            <div class="col-md-8">
-                                <div class="abc">*</div>
-                                <textarea class="form-control" id="comdtls" name="comdtls" placeholder="Complaint Detail"></textarea>
-                            </div>
+                            <div class="clearfix"></div>
+                            
+                            <div class="form-group">
+                                <div class="col-md-8">
+                                    
+                                    <textarea class="form-control" id="comdtls" name="comdtls" placeholder="Complaint Detail"></textarea>
+                                </div>
+                                <div class="col-md-4">
+                                    <select id="non-com-sol" name="non-com-sol" class="form-control" onchange="AlterBox(this.value);">
+                                        <option value="">Is Solution Provided ?</option>
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-8 sol-box">
+                                
+                                <textarea class="form-control non-com-sol-txt" id="non-com-sol-txt" name="non-com-sol-txt" placeholder="Write Complaint Solutions"></textarea>
+                                </div>
+                               
                             </div>
                             
                         </fieldset>
@@ -346,6 +368,7 @@
     $(".enq-tab").hide();
     $(".pro-act").hide();
     $(".subprodata").hide();
+    $(".non-com-sol-txt").hide();
     $("#state").select2({  width: '100%', height: '100%' });
     $("#district").select2({  width: '100%', height: '100%' });
     $("#selst").select2({  width: '100%', height: '100%' });
@@ -411,6 +434,7 @@ function showform(mob){
     data: "mob="+mob,
     dataType: "text",
     success: function( data ) {
+        //alert(data);
         $('#loader').hide();
         $('.nav-pills').show();
         $('.tab-content').show();
@@ -465,7 +489,23 @@ function showmo(dtid){
     }
 }); 
 }
-
+function dshowmo(dtid){
+ // alert(dtid);
+   
+    $.ajax({
+    type: "POST",
+    url: "index.php?route=farmer/register/dmolist",
+    data: "dtid="+dtid,
+    dataType: "text",
+    success: function(data) {
+        //alert(data);
+           // alert(data.zodata);
+        $("#dmo-data").html(data);
+        //$("#mo-data").select2({  width: '100%', height: '100%' });
+    
+    }
+}); 
+}
 
 function eshowdist(stid){
   //alert(stid);
@@ -610,8 +650,11 @@ function callsts(cstsid){
         $('#com-sec').show();
         $('#pro-sub-sec').show();
         $('#pro-sub-sec2').show();
-        $("#B").html('<a href="#2a" data-toggle="tab">COMPLAINTS DETAILS</a>');
+        $("#B").html('<a href="#2a" data-toggle="tab">COMPLAINT DETAILS</a>');
         $("#B").show();
+        $('#progrp').show();
+        $('#prod-cat').show();
+        $('#prod-data').show();
         $("#A").addClass("active");
         $("#1a").addClass("active");
         
@@ -634,8 +677,40 @@ function callsts(cstsid){
         $('#com-sec').hide();
         $('#pro-sub-sec').hide();
         $('#pro-sub-sec2').hide();
-        $("#B").html('<a href="#2a" data-toggle="tab">PRODUCT DETAILS</a>');
+        $("#B").html('<a href="#2a" data-toggle="tab">COMPLAINT DETAILS</a>');
         $("#B").show();
+        $('#progrp').show();
+        $('#prod-cat').show();
+        $('#prod-data').show();
+        $("#A").addClass("active");
+        $("#1a").addClass("active");
+        
+        $(".subprodata").hide();
+        
+        $("#C").hide();
+        $("#C").removeClass("active");
+        $("#3a").removeClass("active");
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        if(emp==1||emp==2){ empsts(emp); }
+    }
+    else if(cstsid==30 || cstsid==31){
+        
+        $(".formdata-sub").hide();
+        $(".pro-act").show();
+        $(".pro-emp").show();
+        
+        $("#A").show();
+        $('#com-sec').hide();
+        $('#pro-sub-sec').hide();
+        $('#pro-sub-sec2').hide();
+        $("#B").html('<a href="#2a" data-toggle="tab">COMPLAINT DETAILS</a>');
+        $("#B").show();
+        $('#progrp').hide();
+        $('#prod-cat').hide();
+        $('#prod-data').hide();
+        
+        
         $("#A").addClass("active");
         $("#1a").addClass("active");
         
@@ -656,6 +731,9 @@ function callsts(cstsid){
         
         $("#A").show();
         $("#B").hide();
+        $('#progrp').show();
+        $('#prod-cat').show();
+        $('#prod-data').show();
         $("#A").addClass("active");
         $("#1a").addClass("active");
         
@@ -735,6 +813,9 @@ function callsts(cstsid){
       var delmobi=$("#del-mob").val();
       var delstat=$("#dselst").val();
       var deldist=$("#dseldt").val();
+      var delmooff=$("#dmooffice").val();
+      var ISP=$("#non-com-sol").val();
+      var YISP=$("#non-com-sol-txt").val();
       var deladvz=$("#del-adv-code").val();
       var delrmks=$("#del-remarks").val();
       
@@ -846,9 +927,9 @@ function callsts(cstsid){
           alertify.error('Profile Details - Select District');
           return false;
       }
-      if(deladvz=="")
+      if(delmooff=="")
       {
-          alertify.error('Profile Details - Adventz Code Required');
+          alertify.error('Profile Details - Select Mo office');
           return false;
       }
        if(delrmks=="")
@@ -856,7 +937,7 @@ function callsts(cstsid){
           alertify.error('Profile Details - Remarks Required');
           return false;
       }
-       
+     
      }
      //******************************* DEALER VALIDATION NEW END******************************//
      //NETWORK Validation End
@@ -1000,7 +1081,7 @@ function callsts(cstsid){
       }
      /* Complaint Section Validation */
      
-      
+     
       if(gpgrp=="0" || gpgrp=="")
       {
         alertify.error('Product Section - Select Product Group');
@@ -1037,6 +1118,204 @@ function callsts(cstsid){
         $("#B").addClass("active");
         $("#2a").addClass("active")
         return false;
+      }
+       if(ISP==''){
+          alertify.error('Complaint Details - Select Solution Provided');
+          return false;
+      }
+      
+      if(ISP==1 && YISP==""){
+          alertify.error('Complaint Details - Complaints Solution Required');
+          return false;
+      }
+           
+     }
+     if((calstsid==30 || calstsid==31)&& empstsid==1){//Complaints 
+     
+      if(gzone=="")
+      {
+        alertify.error('Profile Details - Zone required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gregion=="")
+      {
+        alertify.error('Profile Details - Region required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gstate=="")
+      {
+        alertify.error('Profile Details - Select State');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gdist=="")
+      {
+        alertify.error('Profile Details - Select District');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gmooffice=="")
+      {
+        alertify.error('Profile Details - Mo Office required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gffn=="")
+      {
+        alertify.error('Profile Details - First Name required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+       if(gfmn=="")
+      {
+        alertify.error('Profile Details - Middle Name required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+       if(gfln=="")
+      {
+        alertify.error('Profile Details - Last Name required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+       if(gfv=="")
+      {
+        alertify.error('Profile Details - Farmer village required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gft=="")
+      {
+        alertify.error('Profile Details - Farmer Taluka Required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gfm=="")
+      {
+        alertify.error('Profile Details - Farmer Mobile required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gipf=="")
+      {
+        alertify.error('Profile Details - Select Is Progressive Farmer');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gmc1=="")
+      {
+        alertify.error('Profile Details - Select Crop1');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(gma1=="")
+      {
+        alertify.error('Profile Details - Crop1 Acreage required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      
+      if(gremarks=="")
+      {
+        alertify.error('Profile Details - Remarks required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+     /* Complaint Section Validation */
+     
+     /* 
+      if(gpgrp=="0" || gpgrp=="")
+      {
+        alertify.error('Product Section - Select Product Group');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      if(gpcat=="0" || gpcat=="")
+      {
+        alertify.error('Product Section - Select Product Category');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      if(gpdata=="0" || gpdata=="")
+      {
+        alertify.error('Product Section - Select Product');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      */
+      if(gdtls=="")
+      {
+        alertify.error('Product Section - Complaint Details Required');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+       if(ISP==''){
+          alertify.error('Complaint Details - Select Solution Provided');
+          return false;
+      }
+      
+      if(ISP==1 && YISP==""){
+          alertify.error('Complaint Details - Complaints Solution Required');
+          return false;
       }
            
      }
@@ -1079,7 +1358,7 @@ function callsts(cstsid){
         $("#1a").addClass("active")
         return false;
       }
-      if(deladvz=="")
+     /* if(deladvz=="")
       {
         alertify.error('Profile Details - Adventz Code required');
         $("#B").removeClass("active");
@@ -1087,7 +1366,7 @@ function callsts(cstsid){
         $("#A").addClass("active");
         $("#1a").addClass("active")
         return false;
-      }
+      } */
       
       if(delrmks=="")
       {
@@ -1139,6 +1418,128 @@ function callsts(cstsid){
         $("#2a").addClass("active")
         return false;
       }
+       if(ISP==''){
+          alertify.error('Complaint Details - Select Solution Provided');
+          return false;
+      }
+      
+      if(ISP==1 && YISP==""){
+          alertify.error('Complaint Details - Complaints Solution Required');
+          return false;
+      }
+       
+           
+     }
+     //******************************* DEALER WITH NON-PRODUCT END****************************//
+     //******************************* DEALER WITH SERVICE/NETWORK********************************//
+     if((calstsid==30 || calstsid==31) && empstsid==2){//Complaints 
+     
+      if(delfirm=="")
+      {
+        alertify.error('Profile Details - Firm name required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(delname=="")
+      {
+        alertify.error('Profile Details - Complainant name required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(delstat=="")
+      {
+        alertify.error('Profile Details - Select State');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      if(deldist=="")
+      {
+        alertify.error('Profile Details - Select District');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+     /* if(deladvz=="")
+      {
+        alertify.error('Profile Details - Adventz Code required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      } */
+      
+      if(delrmks=="")
+      {
+        alertify.error('Profile Details - Remarks required');
+        $("#B").removeClass("active");
+        $("#2a").removeClass("active");
+        $("#A").addClass("active");
+        $("#1a").addClass("active")
+        return false;
+      }
+      
+     /* Complaint Section Validation */
+    
+      /*
+      if(gpgrp=="0" || gpgrp=="")
+      {
+        alertify.error('Product Section - Select Product Group');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      if(gpcat=="0" || gpcat=="")
+      {
+        alertify.error('Product Section - Select Product Category');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      if(gpdata=="0" || gpdata=="")
+      {
+        alertify.error('Product Section - Select Product');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+      */
+      if(gdtls=="")
+      {
+        alertify.error('Product Section - Complaint Details Required');
+        $("#A").removeClass("active");
+        $("#1a").removeClass("active");
+        $("#B").addClass("active");
+        $("#2a").addClass("active")
+        return false;
+      }
+       if(ISP==''){
+          alertify.error('Complaint Details - Select Solution Provided');
+          return false;
+      }
+      
+      if(ISP==1 && YISP==""){
+          alertify.error('Complaint Details - Complaints Solution Required');
+          return false;
+      }
+       
            
      }
      //******************************* DEALER WITH NON-PRODUCT END****************************//
@@ -1377,9 +1778,9 @@ function callsts(cstsid){
         $("#1a").addClass("active")
         return false;
       }
-      if(deladvz=="")
+    if(delmooff=="")
       {
-        alertify.error('Profile Details - Adventz Code required');
+        alertify.error('Profile Details - Mo Office required');
         $("#B").removeClass("active");
         $("#2a").removeClass("active");
         $("#A").addClass("active");
@@ -1457,7 +1858,7 @@ function callsts(cstsid){
         var serlizedata = $("#clfrm").serialize();
         console.log(serlizedata);
      
-      var url="index.php?route=farmer/register/saveform";
+    var url="index.php?route=farmer/register/saveform";
       console.log(url);
       $.post(url, serlizedata, function (data) {
       console.log(data);
@@ -1491,5 +1892,19 @@ function callsts(cstsid){
   function backbtn(){
     url = 'index.php?route=common/dashboard';
     location = url;
+  }
+  
+  
+  
+  
+  function AlterBox(res){
+      
+      if(res=="1"){
+          $(".non-com-sol-txt").val('');
+          $(".non-com-sol-txt").show();
+      }
+      else{
+          $(".non-com-sol-txt").hide();
+      }
   }
 </script> 

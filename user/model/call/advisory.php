@@ -124,7 +124,7 @@ $log->write($sql);
         $crop_Details_Irrigation=$data["crop_Details_Irrigation"];
         $crop_Details_Others=$data["crop_Details_Others"];
         
-		 if(empty($crop_Details_Nurtition)){$crop_Details_Nurtition='NA';}
+	 if(empty($crop_Details_Nurtition)){$crop_Details_Nurtition='NA';}
          if(empty($crop_Details_Protection)){$crop_Details_Protection='NA';}
          if(empty($crop_Details_Seed)){$crop_Details_Seed='NA';}
          if(empty($crop_Details_Soil)){$crop_Details_Soil='NA';}

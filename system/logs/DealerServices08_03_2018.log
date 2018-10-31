@@ -1,0 +1,117 @@
+2018-03-08 9:17:48 - Find Zone & Region: SELECT ZO_ID, RO_ID FROM mas_pol_geo WHERE GEO_ID='28'
+2018-03-08 9:17:48 - Check Dealer Data : select `DEL_MOB` from `ak_dealer` where `DEL_MOB`='9910077037'
+2018-03-08 9:17:48 - Find MO: select mo_user_id from crm_mo_office where district_id='' and mo_office_geo_code=''
+2018-03-08 9:17:48 - Find MO ID: 
+2018-03-08 9:17:48 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18030809174838',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9910077037',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '1',
+                        `PROD_ID` ='10903',
+                        `PROD_CATG` ='10900',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='736',
+                        `RO_ID` ='745',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-08 09:17:48',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-08',
+                        `COMPLAINT_QUERY` ='Test Complaints Data',
+                        `COMPLAINT_REMARKS` ='NA'
+2018-03-08 9:17:48 - PRE_STS: select status from cc_incomingcall where mobile='9910077037' and call_type = 2 and key_press=2
+2018-03-08 9:17:48 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18030809174838',`CASE_MOBILE` = '9910077037',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '29',`UPDATE_DATE` = '2018-03-08',`UPDATE_TIME` = '09:17:48'
+2018-03-08 9:17:48 - UP_CC_IN: update cc_incomingcall set status='29',tot_attempt=tot_attempt+1 where mobile='9910077037' and call_type = 2 and key_press=2
+2018-03-08 9:35:12 - Find Zone & Region: SELECT ZO_ID, RO_ID FROM mas_pol_geo WHERE GEO_ID='28'
+2018-03-08 9:35:12 - Check Dealer Data : select `DEL_MOB` from `ak_dealer` where `DEL_MOB`='9910077037'
+2018-03-08 9:35:12 - Find MO: select mo_user_id from crm_mo_office where district_id='' and mo_office_geo_code='914'
+2018-03-08 9:35:12 - Find MO ID: 
+2018-03-08 9:35:12 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18030809351202',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9910077037',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '1',
+                        `PROD_ID` ='10903',
+                        `PROD_CATG` ='10900',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='736',
+                        `RO_ID` ='745',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-08 09:35:12',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-08',
+                        `COMPLAINT_QUERY` ='Test Complaint',
+                        `COMPLAINT_REMARKS` ='NA'
+2018-03-08 9:35:12 - PRE_STS: select status from cc_incomingcall where mobile='9910077037' and call_type = 2 and key_press=2
+2018-03-08 9:35:12 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18030809351202',`CASE_MOBILE` = '9910077037',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '29',`UPDATE_DATE` = '2018-03-08',`UPDATE_TIME` = '09:35:12'
+2018-03-08 9:35:12 - UP_CC_IN: update cc_incomingcall set status='29',tot_attempt=tot_attempt+1 where mobile='9910077037' and call_type = 2 and key_press=2
+2018-03-08 9:40:54 - Find Zone & Region: SELECT ZO_ID, RO_ID FROM mas_pol_geo WHERE GEO_ID='28'
+2018-03-08 9:40:54 - Check Dealer Data : select `DEL_MOB` from `ak_dealer` where `DEL_MOB`='9910077037'
+2018-03-08 9:40:54 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-08 9:40:54 - Find MO ID: 89
+2018-03-08 9:40:54 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18030809405470',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9910077037',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '1',
+                        `PROD_ID` ='10903',
+                        `PROD_CATG` ='10900',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='736',
+                        `RO_ID` ='745',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-08 09:40:54',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-08',
+                        `COMPLAINT_QUERY` ='Test Complaint',
+                        `COMPLAINT_REMARKS` ='NA'
+2018-03-08 9:40:54 - PRE_STS: select status from cc_incomingcall where mobile='9910077037' and call_type = 2 and key_press=2
+2018-03-08 9:40:54 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18030809405470',`CASE_MOBILE` = '9910077037',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '29',`UPDATE_DATE` = '2018-03-08',`UPDATE_TIME` = '09:40:54'
+2018-03-08 9:40:54 - UP_CC_IN: update cc_incomingcall set status='29',tot_attempt=tot_attempt+1 where mobile='9910077037' and call_type = 2 and key_press=2

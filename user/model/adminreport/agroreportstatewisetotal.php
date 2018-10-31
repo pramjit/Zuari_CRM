@@ -14,7 +14,7 @@ class Modeladminreportagroreportstatewisetotal extends Model {
     where cc.DATE_RECEIVED between '".$from_date."' and '".$to_date."'
     group by cc.STATE
     )as b";*/
-echo $sql="SELECT CR.CASE_ID,CR.FAR_MOB,CR.CASE_STATUS,SV.STATE,MP.`NAME` AS 'STATENAME',
+$sql="SELECT CR.CASE_ID,CR.FAR_MOB,CR.CASE_STATUS,SV.STATE,MP.`NAME` AS 'STATENAME',
 SUM(CASE WHEN CR.CASE_TYPE=1 THEN '1' ELSE '0' END) AS 'AgroAdvisory',
 SUM(CASE WHEN CR.CASE_TYPE=2 THEN '1' ELSE '0' END) AS 'RediCall'
 FROM crm_adv CR

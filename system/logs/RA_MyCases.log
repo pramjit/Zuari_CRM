@@ -1,0 +1,42 @@
+2018-07-23 4:31:27 - RA ID: 14
+2018-07-23 4:31:27 - RA_MyCase: SELECT cc.CASE_ID AS 'CASE_ID',
+                CONCAT(cf.FAR_FIR_NAME,'',cf.FAR_MID_NAME,'',cf.FAR_LST_NAME) AS 'FAR_NAME',
+                cc.COMP_MOBILE AS 'FAR_MOB',
+                mp.PRODUCT_DESC AS 'PROD_CAT',
+                DATE_FORMAT(cc.CR_DATE,'%d%M %y') AS 'CR_DATE',
+                DATEDIFF(cc.DUE_DATE,CURDATE()) as 'DUE_DAYS',
+                cs.case_status AS 'CASE_STS'
+                FROM crm_case cc
+                LEFT JOIN ak_farmer cf ON (cc.CASE_ID = cf.FAR_ID and cc.COMP_MOBILE = cf.FAR_MOBILE)
+                LEFT JOIN mas_product mp ON (cc.PROD_CATG = mp.PRODUCT_ID and PRODUCT_TYPE = 2)
+                LEFT JOIN crm_case_status cs ON (cc.CASE_STATUS = cs.sid)
+                WHERE cc.CASE_STATUS IN(1,6,7) and cc.COMP_RA='14'
+                ORDER BY cc.CR_DATE
+2018-09-19 4:35:16 - RA ID: 14
+2018-09-19 4:35:16 - RA_MyCase: SELECT cc.CASE_ID AS 'CASE_ID',
+                CONCAT(cf.FAR_FIR_NAME,'',cf.FAR_MID_NAME,'',cf.FAR_LST_NAME) AS 'FAR_NAME',
+                cc.COMP_MOBILE AS 'FAR_MOB',
+                mp.PRODUCT_DESC AS 'PROD_CAT',
+                DATE_FORMAT(cc.CR_DATE,'%d%M %y') AS 'CR_DATE',
+                DATEDIFF(cc.DUE_DATE,CURDATE()) as 'DUE_DAYS',
+                cs.case_status AS 'CASE_STS'
+                FROM crm_case cc
+                LEFT JOIN ak_farmer cf ON (cc.CASE_ID = cf.FAR_ID and cc.COMP_MOBILE = cf.FAR_MOBILE)
+                LEFT JOIN mas_product mp ON (cc.PROD_CATG = mp.PRODUCT_ID and PRODUCT_TYPE = 2)
+                LEFT JOIN crm_case_status cs ON (cc.CASE_STATUS = cs.sid)
+                WHERE cc.CASE_STATUS IN(1,6,7) and cc.COMP_RA='14'
+                ORDER BY cc.CR_DATE
+2018-09-19 5:53:55 - RA ID: 13
+2018-09-19 5:53:55 - RA_MyCase: SELECT cc.CASE_ID AS 'CASE_ID',
+                CONCAT(cf.FAR_FIR_NAME,'',cf.FAR_MID_NAME,'',cf.FAR_LST_NAME) AS 'FAR_NAME',
+                cc.COMP_MOBILE AS 'FAR_MOB',
+                mp.PRODUCT_DESC AS 'PROD_CAT',
+                DATE_FORMAT(cc.CR_DATE,'%d%M %y') AS 'CR_DATE',
+                DATEDIFF(cc.DUE_DATE,CURDATE()) as 'DUE_DAYS',
+                cs.case_status AS 'CASE_STS'
+                FROM crm_case cc
+                LEFT JOIN ak_farmer cf ON (cc.CASE_ID = cf.FAR_ID and cc.COMP_MOBILE = cf.FAR_MOBILE)
+                LEFT JOIN mas_product mp ON (cc.PROD_CATG = mp.PRODUCT_ID and PRODUCT_TYPE = 2)
+                LEFT JOIN crm_case_status cs ON (cc.CASE_STATUS = cs.sid)
+                WHERE cc.CASE_STATUS IN(1,6,7) and cc.COMP_RA='13'
+                ORDER BY cc.CR_DATE

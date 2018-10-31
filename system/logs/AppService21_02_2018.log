@@ -1,0 +1,1632 @@
+2018-02-21 11:28:23 - By Post
+2018-02-21 11:29:57 - By Post
+2018-02-21 11:30:58 - By Post
+2018-02-21 11:31:43 - By Post
+2018-02-21 11:31:53 - 
+2018-02-21 11:36:07 - By Post
+2018-02-21 11:37:06 - 
+2018-02-21 11:37:09 - By Post
+2018-02-21 11:38:34 - 
+2018-02-21 11:38:44 - By Post
+2018-02-21 11:40:08 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52482
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => cc5f6e2c-2bad-4fa1-19a0-ee73acd95107
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_APPDATA] => 1
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 0
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1akxIhgYO6k5iklof@DwAAAFY
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213203.9137
+            [REQUEST_TIME] => 1519213203
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:40:08 - 
+2018-02-21 11:40:08 - By Post
+2018-02-21 11:40:08 - Array
+(
+)
+
+2018-02-21 11:43:57 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52498
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 6af7c6e2-d710-4072-60b5-f471e2b42b3c
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 15
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1bdBZVvT7HQhEAqz9nWAAAAIQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213428.4993
+            [REQUEST_TIME] => 1519213428
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:43:59 - {"AppData":"1"}
+2018-02-21 11:44:19 - By Post
+2018-02-21 11:44:21 - Array
+(
+)
+
+2018-02-21 11:45:55 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52504
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 7d858ba8-7cea-c443-5fdf-5172415ec537
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 15
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1b5BIhgYO6k5iklof@EAAAAE4
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213540.2683
+            [REQUEST_TIME] => 1519213540
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:45:56 - {"AppData":"1"}
+2018-02-21 11:46:32 - By Post
+2018-02-21 11:46:32 - Array
+(
+)
+
+2018-02-21 11:46:52 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52508
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => b6a4821d-561c-430f-0dcd-7edb656de284
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 13
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1cImw2x0e9Fw2FktOAyQAAAMM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213602.3976
+            [REQUEST_TIME] => 1519213602
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:46:53 - {"AppData":1}
+2018-02-21 11:49:36 - By Post
+2018-02-21 11:49:36 - Array
+(
+)
+
+2018-02-21 11:50:29 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52528
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => bde4dd54-f546-f6a6-8a12-7fda209c5adb
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 13
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1dBRIhgYO6k5iklof@EgAAAFQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213829.0697
+            [REQUEST_TIME] => 1519213829
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:50:29 - {"AppData":1}
+2018-02-21 11:50:52 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52542
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 90f5fdb2-855d-2aab-fbfd-ebf2cbb1b174
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 13
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1dHBZVvT7HQhEAqz9nWQAAAIo
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519213852.8891
+            [REQUEST_TIME] => 1519213852
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 11:50:52 - {"AppData":1}
+2018-02-21 11:50:52 - By Post
+2018-02-21 11:50:52 - Array
+(
+)
+
+2018-02-21 11:55:16 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52592
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------4fa1230f3993bafe
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1d1xIhgYO6k5iklof@EwAAAFc
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519214039.9911
+            [REQUEST_TIME] => 1519214039
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-02-21 11:55:16 - 
+2018-02-21 12:00:32 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52618
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 028ea359-2f37-ece7-a259-35c5dd8e1e63
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 339
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1fGRIhgYO6k5iklof@FAAAAEA
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519214361.5089
+            [REQUEST_TIME] => 1519214361
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:00:33 - {"ID":"1","StateId":"09","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:01:03 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52622
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------b9d191f626db045c
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1fHhZVvT7HQhEAqz9nXQAAAJE
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519214366.3598
+            [REQUEST_TIME] => 1519214366
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-02-21 12:01:04 - 
+2018-02-21 12:16:08 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52678
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 5754200c-ee12-0cfc-8d50-6bb129b82823
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 366
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1jARIhgYO6k5iklof@FQAAAEY
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215361.4889
+            [REQUEST_TIME] => 1519215361
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:16:08 - {
+	"ServiceType":1,
+	"StateId":09,
+	"Mobile":9971813600,
+	"CustomerName":"Test User",
+	"ProductId":11,
+	"ProductName":"Mango",
+	"StoreId":11,
+	"Quantity":5,
+	"OrderQuantity":100,
+	"QueryId":1,
+	"QueryText":"Product Purchase Intent Given",
+	"ImageUrl1":"http:\/\/abc.com\/image\/image.png",
+	"ImageUrl2":"http:\/\/abc.com\/image\/image.png",
+	"TestName":"Test Mail"
+}
+2018-02-21 12:16:37 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52682
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 24597944-5582-a388-582e-e8655cd548b7
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 366
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1jHxZVvT7HQhEAqz9nXgAAAJQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215391.7956
+            [REQUEST_TIME] => 1519215391
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:16:37 - {
+	"ServiceType":1,
+	"StateId":09,
+	"Mobile":9971813600,
+	"CustomerName":"Test User",
+	"ProductId":11,
+	"ProductName":"Mango",
+	"StoreId":11,
+	"Quantity":5,
+	"OrderQuantity":100,
+	"QueryId":1,
+	"QueryText":"Product Purchase Intent Given",
+	"ImageUrl1":"http:\/\/abc.com\/image\/image.png",
+	"ImageUrl2":"http:\/\/abc.com\/image\/image.png",
+	"TestName":"Test Mail"
+}
+2018-02-21 12:18:05 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52688
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 839db7a1-559b-1185-6aa6-40227eea95f8
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 338
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1jcxZVvT7HQhEAqz9nXwAAAJM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215475.8109
+            [REQUEST_TIME] => 1519215475
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:18:06 - {"ServiceType":1,"StateId":09,"Mobile":9971813600,"CustomerName":"Test User","ProductId":11,"ProductName":"Mango","StoreId":11,	"Quantity":5,"OrderQuantity":100,"QueryId":1,"QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:19:24 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52704
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 7eac0f3b-4945-c122-3990-7a0018707cb7
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 338
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1jxhZVvT7HQhEAqz9nYAAAAI0
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215558.0404
+            [REQUEST_TIME] => 1519215558
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:19:34 - {"ServiceType":1,"StateId":09,"Mobile":9971813600,"CustomerName":"Test User","ProductId":11,"ProductName":"Mango","StoreId":11,	"Quantity":5,"OrderQuantity":100,"QueryId":1,"QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:20:11 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52704
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 0b2981a3-18d6-2cd5-da23-1b8722852ee8
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 338
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1j9xZVvT7HQhEAqz9nYQAAAI4
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215607.093
+            [REQUEST_TIME] => 1519215607
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:20:12 - {"ServiceType":1,"StateId":09,"Mobile":9971813600,"CustomerName":"Test User","ProductId":11,"ProductName":"Mango","StoreId":11,	"Quantity":5,"OrderQuantity":100,"QueryId":1,"QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:21:11 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52718
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 0086b889-d193-00cf-3828-b54210e4ecaf
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 50
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1kMRZVvT7HQhEAqz9nYgAAAIY
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215665.0106
+            [REQUEST_TIME] => 1519215665
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:21:12 - {"ServiceType":1,"StateId":09,"Mobile":9971813600}
+2018-02-21 12:22:24 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52732
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 0e94e9c6-8007-2252-2216-ba92397625db
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 17
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1keRZVvT7HQhEAqz9nYwAAAIU
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215737.9478
+            [REQUEST_TIME] => 1519215737
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:22:26 - {"ServiceType":1}
+2018-02-21 12:23:09 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52732
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 4913e2c6-87da-e46b-4dc9-ff98cc9339db
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 354
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1kpxZVvT7HQhEAqz9nZAAAAIE
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215783.8243
+            [REQUEST_TIME] => 1519215783
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:23:10 - {"ServiceType":"1","StateId":"09","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderQuantity":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:24:45 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52746
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 5cfa1d03-b7cd-59bb-fd0c-560a2f894ce9
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 354
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1lDRIhgYO6k5iklof@FgAAAEM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215885.507
+            [REQUEST_TIME] => 1519215885
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:24:45 - {"ServiceType":"1","StateId":"09","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderQuantity":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:25:05 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52760
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 1e9fa18a-6b83-3dbd-ae59-fb4d3a914e48
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 332
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1lIRIhgYO6k5iklof@FwAAAEU
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215905.0269
+            [REQUEST_TIME] => 1519215905
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:25:05 - {"ServiceType":"1","StateId":"09","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderQuantity":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-02-21 12:25:30 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52774
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => f43e6240-3723-cc51-bcd0-eff49764e174
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1lOhIhgYO6k5iklof@GAAAAEg
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519215930.6153
+            [REQUEST_TIME] => 1519215930
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:25:30 - {"ServiceType":"1","StateId":"09","Mobile":"9971813600"}
+2018-02-21 12:28:07 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+            [language] => en
+            [PHPSESSID] => clrdpai1la20ekbpkv6p0kcjj8
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 52802
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_COOKIE] => language=en; PHPSESSID=clrdpai1la20ekbpkv6p0kcjj8
+            [HTTP_ACCEPT_LANGUAGE] => en-US,en;q=0.9
+            [HTTP_ACCEPT_ENCODING] => gzip, deflate
+            [HTTP_DNT] => 1
+            [HTTP_ACCEPT] => */*
+            [CONTENT_TYPE] => application/json
+            [HTTP_POSTMAN_TOKEN] => 95084862-7d76-2669-3855-a86d1735c998
+            [HTTP_ORIGIN] => chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+            [HTTP_CACHE_CONTROL] => no-cache
+            [HTTP_USER_AGENT] => Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36
+            [CONTENT_LENGTH] => 56
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => Wo1l1xZVvT7HQhEAqz9nZQAAAIM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1519216087.721
+            [REQUEST_TIME] => 1519216087
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-02-21 12:28:07 - {"ServiceType":"1","StateId":"09","Mobile":"9971813600"}
+2018-02-21 12:28:07 - Array
+(
+    [ServiceType] => 1
+    [StateId] => 09
+    [Mobile] => 9971813600
+)
+

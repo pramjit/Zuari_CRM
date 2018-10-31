@@ -14,6 +14,20 @@ class Modelfarmerregister extends Model {
      * 13-dnd
      * 22-switch off
      * 23-not picking
+	 $sql="select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
+            from cc_incomingcall
+            LEFT JOIN ms_mobilestate 
+            ON (cc_incomingcall.STATE=ms_mobilestate.stateid)
+            LEFT JOIN mas_callstatus
+            ON (cc_incomingcall.`STATUS` = mas_callstatus.STATUS_ID)
+						LEFT JOIN ak_retailers_call arc
+						ON( cc_incomingcall.MOBILE = arc.MOBILE_NO)
+            where cc_incomingcall.status in(18,4,6,11,12,13,22,23) 
+						and cc_incomingcall.CALL_TYPE=2 
+						and cc_incomingcall.KEY_PRESS=2 
+						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='".$cr_by."')
+                                                and TOT_ATTEMPT < 3
+            GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME";
      */
     $sql="select MOBILE,DATE_RECEIVED,IFNULL(ms_mobilestate.state,'NA') AS STATE, mas_callstatus.STATUS_NAME AS 'STATUS', arc.RTLR_CODE AS 'PIN',TOT_ATTEMPT
             from cc_incomingcall
@@ -28,7 +42,7 @@ class Modelfarmerregister extends Model {
 						and cc_incomingcall.KEY_PRESS=2 
 						and cc_incomingcall.state in(select state_id from ak_agent_geo where cc_agent_id='".$cr_by."')
                                                 and TOT_ATTEMPT < 3
-            GROUP BY MOBILE,DATE_RECEIVED, ms_mobilestate.state,mas_callstatus.STATUS_NAME";
+            GROUP BY MOBILE";
             $log->write($sql);
             
             
@@ -190,6 +204,7 @@ where MOBILE='".$mob."'";
         
         $delst    = $data['dselst'];
         $deldt    = $data['dseldt'];
+        $delmo    = $data['dmooffice'];
         $delcat   = $data['del-cat'];
         if(empty($delcat)){$delcat=1;}
         $deladd   = $data['del-add'];
@@ -249,7 +264,13 @@ where MOBILE='".$mob."'";
         $proplant=$data['pro-plant'];
         $propkgmy=$data['pro-pkg-my'];
         $comdtls  = $data['comdtls'];
-        $comdtls=str_replace("'", "", $comdtls);                                                           
+        $comdtls=str_replace("'", "", $comdtls);     
+        //************************ Added New Parameter ******************//
+        $dmooffice=$data['dmooffice'];
+        $is_ser_sol=$data['non-com-sol']; 
+        $ser_sol_txt=$data['non-com-sol-txt'];
+        $comrmks=str_replace("'", "", $ser_sol_txt);    
+        if(empty($comrmks)){$comrmks='NA';}
 //************************************** CHECK DATA AND INSERT UPDATE STARTED***********************// 
         $cr_by = $this->customer->getId(); //Created By User ID
 		$t = microtime(true);
@@ -1423,9 +1444,18 @@ where MOBILE='".$mob."'";
                 $ret_id = $this->db->countAffected();  
                 if($ret_id==1)
                 {
+                   
+                    if($calsts==29 || $calsts==30 || $calsts==31){
+                    //************************************* FETCH MO_ID *************************************//
+                    $mosql="select mo_user_id from crm_mo_office where district_id='".$district."' and mo_office_geo_code='".$mooffice."'";
+                    $log->write("Find MO: ".$mosql);
+                    $chkmo=$this->db->query($mosql);
+                    $mo_id=$chkmo->row['mo_user_id'];
+                    $log->write("Find MO ID: ".$mo_id);
+                    if(empty($mo_id)){$mo_id=0;}
+                    if(empty($comdtls)){$comdtls=$remarks;}
                     
-                    /*
-			if($calsts==29){
+                    //*************************************FETCH MO_ID END*************************************//
                         $sqlcom="insert into `crm_case` set
                         `CASE_ID`='".$case_id."',
                         `ADV_CASE_PIN` ='0',
@@ -1447,18 +1477,43 @@ where MOBILE='".$mob."'";
                         `ZO_ID` ='".$zone."',
                         `RO_ID` ='".$region."',
                         `TERR_ID` ='0',
+                        `MO_ID` ='".$mooffice."',
+                        `COMP_MO` ='".$mo_id."',
                         `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='".$is_ser_sol."',
                         `CR_DATE`='".$cr_datetime."',
                         `CASE_STATUS`='7',
-                        `CASE_PRIO` ='0',
+                        `CASE_PRIO` ='".$is_ser_sol."',
                         `DUE_DATE` ='".$cr_date."',
                         `COMPLAINT_QUERY` ='".$comdtls."',
-                        `COMPLAINT_REMARKS` ='".$comdtls."'";
+                        `COMPLAINT_REMARKS` ='".$comrmks."'";
+                        
                         $log->write("CRM_NON_ENTRY: ".$sqlcom);
                         $this->db->query($sqlcom);
                         }
                         
-                     */   
+                       //********************* IF SOL PROVIDED ****************//
+                        if($is_ser_sol==1){
+                            $sql="insert into crm_case_detail set 
+                                case_id='".$case_id."',
+                                case_pre_status='7',
+                                case_cur_status='99',
+                                solution='".$comrmks."',
+                                ra_remarks='".$comrmks."',
+                                ra_date='".$cr_date."',
+                                aa_remarks='".$comrmks."',
+                                aa_date='".$cr_date."',
+                                cr_date='".$cr_date."',
+                                up_user_id='".$cr_by."',
+                                up_file_path='NA'";
+                                $this->db->query($sql);
+                                $ret_id = $this->db->countAffected();  
+                                if($ret_id==1){
+                                    $sql="update crm_case set case_status='27' where case_id='".$case_id."'";
+                                    $this->db->query($sql);
+                                }
+                        }
+                        //********************* IF SOL PROVIDED END ****************//
                     // return 1; 
                         $sqlprests="select status from cc_incomingcall where mobile='".$farmob."' and call_type = 2 and key_press=2";
                         $log->write("PRE_STS: ".$sqlprests);
@@ -1477,7 +1532,7 @@ where MOBILE='".$mob."'";
                             $this->db->query($sqlcc);
                             $ret_id4 = $this->db->countAffected(); 
                             if($ret_id4==1){
-                                return 1;
+                                return $case_id;
                             }
                             else{
                                 return 0;
@@ -1549,7 +1604,17 @@ where MOBILE='".$mob."'";
             $res = $this->db->countAffected(); // On Success Update/Insert 
                 if($res==1)
                 {
-			if($calsts==29){
+                    if($calsts==29 || $calsts==30 || $calsts==31){
+                    //************************************* FETCH MO_ID *************************************//
+                    $mosql="select mo_user_id from crm_mo_office where district_id='".$deldt."' and mo_office_geo_code='".$dmooffice."'";
+                    $log->write("Find MO: ".$mosql);
+                    $chkmo=$this->db->query($mosql);
+                    $mo_id=$chkmo->row['mo_user_id'];
+                    $log->write("Find MO ID: ".$mo_id);
+                    if(empty($mo_id)){$mo_id=0;}
+                    if(empty($comdtls)){$comdtls=$remarks;}
+                    
+                    //*************************************FETCH MO_ID END*************************************//
                         $sqlcom="insert into `crm_case` set
                         `CASE_ID`='".$case_id."',
                         `ADV_CASE_PIN` ='0',
@@ -1571,16 +1636,43 @@ where MOBILE='".$mob."'";
                         `ZO_ID` ='".$zone."',
                         `RO_ID` ='".$region."',
                         `TERR_ID` ='0',
+                        `MO_ID` ='".$dmooffice."',
+                        `COMP_MO` ='".$mo_id."',
                         `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='".$is_ser_sol."',
                         `CR_DATE`='".$cr_datetime."',
                         `CASE_STATUS`='7',
-                        `CASE_PRIO` ='0',
+                        `CASE_PRIO` ='".$is_ser_sol."',
                         `DUE_DATE` ='".$cr_date."',
                         `COMPLAINT_QUERY` ='".$comdtls."',
-                        `COMPLAINT_REMARKS` ='".$comdtls."'";
+                        `COMPLAINT_REMARKS` ='".$comrmks."'";
+                        
                         $log->write("CRM_NON_ENTRY: ".$sqlcom);
                         $this->db->query($sqlcom);
                         }
+                        //********************* IF SOL PROVIDED ****************//
+                        if($is_ser_sol==1){
+                            $sql="insert into crm_case_detail set 
+                                case_id='".$case_id."',
+                                case_pre_status='7',
+                                case_cur_status='99',
+                                solution='".$comrmks."',
+                                ra_remarks='".$comrmks."',
+                                ra_date='".$cr_date."',
+                                aa_remarks='".$comrmks."',
+                                aa_date='".$cr_date."',
+                                cr_date='".$cr_date."',
+                                up_user_id='".$cr_by."',
+                                up_file_path='NA'";
+                                $this->db->query($sql);
+                                $ret_id = $this->db->countAffected();  
+                                if($ret_id==1){
+                                    $sql="update crm_case set case_status='27' where case_id='".$case_id."'";
+                                    $this->db->query($sql);
+                                }
+                        }
+                        //********************* IF SOL PROVIDED END ****************//
+                        
                     // return 1; 
                         $sqlprests="select status from cc_incomingcall where mobile='".$farmob."' and call_type = 2 and key_press=2";
                         $log->write("PRE_STS: ".$sqlprests);
@@ -1599,7 +1691,7 @@ where MOBILE='".$mob."'";
                             $this->db->query($sqlcc);
                             $ret_id4 = $this->db->countAffected(); 
                             if($ret_id4==1){
-                                return 1;
+                                return $case_id;
                             }
                             else{
                                 return 0;
@@ -1621,7 +1713,8 @@ where MOBILE='".$mob."'";
         //Check Case Type
         $chksql="select to_status as 'CASE_TYPE' from crm_status_trans where case_id='".$cid."'";
         $querychk = $this->db->query($chksql);
-        if($querychk->row['CASE_TYPE']==2)
+        $case_type=$querychk->row['CASE_TYPE'];
+        if($case_type==2)
         {
             $sql="select crm_case.case_id as 'CID',crm_case.COMP_RA as 'RAID',DATEDIFF(crm_case.RA_DUE_DATE, crm_case.CR_DATE) as 'NOD' ,ak_customer.email as 'MID', concat(ak_customer.firstname,' ',ak_customer.lastname)as 'RA_NAME', 2 AS 'FLAG' from crm_case 
             left join ak_customer on(crm_case.COMP_RA=ak_customer.customer_id)
@@ -1629,11 +1722,28 @@ where MOBILE='".$mob."'";
             $query = $this->db->query($sql);
             return $query->row;
         }
-        if($querychk->row['CASE_TYPE']==32)
+        if($case_type==32)
         {
             $sql="select crm_adv.case_id as 'CID',crm_adv.ADV_ID as 'RAID',crm_adv.case_pin as 'NOD' ,ak_customer.email as 'MID', concat(ak_customer.firstname,' ',ak_customer.lastname)as 'RA_NAME', 32 AS 'FLAG' from crm_adv
                 left join ak_customer on(crm_adv.adv_id=ak_customer.customer_id)
                 where crm_adv.case_id='".$cid."'";
+            $query = $this->db->query($sql);
+            return $query->row;
+        }
+        if($case_type==29 || $case_type==30 || $case_type==31){
+            $sql="select 
+                crm_case.case_id as 'CID',
+                crm_case.COMP_MO as 'RAID',
+                2 as 'NOD',
+                ak_customer.email as 'MID', 
+                concat(ak_customer.firstname,' ',ak_customer.lastname)as 'RA_NAME', 
+                (CASE 
+                    WHEN IS_COMP_SOL=2 THEN '293031'
+                    WHEN IS_COMP_SOL=2 THEN '1'
+                    ELSE '0'
+                END) AS 'FLAG' from crm_case
+                left join ak_customer on(crm_case.COMP_MO=ak_customer.customer_id)
+                where crm_case.case_id='".$cid."'";
             $query = $this->db->query($sql);
             return $query->row;
         }

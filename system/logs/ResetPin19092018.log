@@ -1,0 +1,19 @@
+2018-09-19 6:32:04 - Array
+(
+    [CID] => 18091812304006
+    [MOB] => 9901589690
+)
+
+2018-09-19 6:32:04 - UPDATE crm_adv SET 
+            CASE_PIN=7691,
+            CASE_STATUS=7, 
+            MOD_DATE =CURDATE(), 
+            CALL_FROM=NULL, 
+            CALL_DATE=NULL, 
+            CALL_COUNT=0,
+            TOT_ATTEMPT=0,
+            FILE_SYNC=0, 
+            CALL_STATUS=7, 
+            CC_ATTEND=0,
+            CASE_TYPE=11
+            WHERE CASE_ID=18091812304006 AND FAR_MOB=9901589690

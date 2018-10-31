@@ -87,7 +87,7 @@
             foreach($misscallData as $result)
             {
             echo "<tr>";
-            echo "<td class='text-center' style='cursor: pointer; font-weight:bold; color:blue;'  onclick='showform(".$result['MOBILE'].");'>".$result['MOBILE']."</td>";
+            echo "<td class='text-center' style='cursor: pointer; font-weight:bold; color:blue;'  onclick='showform(".$result['MOBILE'].','.$result['CASE_ID'].");'>".$result['MOBILE']."</td>";
             echo "<td>".$result['STATE']."</td>";
             echo "<td>".$result['DATE_RECEIVED']."</td>";
             echo "</tr>";
@@ -152,11 +152,12 @@
 
 
 });
-function showform(mob){
+function showform(mob,caseid){
+    //alert(mob+' , '+caseid);
     $.ajax({
     type: "POST",
     url: "index.php?route=call/feedback/retrivedata",
-    data: "mob="+mob,
+    data: "caseid="+caseid,
     dataType: "text",
     success: function( data ) {
         $("#profile").html("<i class='fa fa-refresh fa-spin fa fa-fw margin-bottom'></i><span>Calling...&nbsp;&nbsp;:"+mob+"</span><hr><br>");
@@ -164,24 +165,7 @@ function showform(mob){
         $("#far-mob").val(mob);
         $("#formdata").show();
     
-        $("#selst").select2({  width: '100%', height: '100%' });
-        $("#seldt").select2({  width: '100%', height: '100%' });
-        $("#eselst").select2({  width: '100%', height: '100%' });
-        $("#eseldt").select2({  width: '100%', height: '100%' });
-        $("#dselst").select2({  width: '100%', height: '100%' });
-        $("#dseldt").select2({  width: '100%', height: '100%' });
-        $("#crop1").select2({  width: '100%', height: '100%' });
-        $("#crop2").select2({  width: '100%', height: '100%' });
-        $("#ecrop").select2({  width: '100%', height: '100%' });
-        $("#procat").select2({  width: '100%', height: '100%' });
-        $("#prodata").select2({  width: '100%', height: '100%' });
-        $("#eprocat").select2({  width: '100%', height: '100%' });
-        $("#eprodata").select2({  width: '100%', height: '100%' });
-        $("#comcat").select2({  width: '100%', height: '100%' });
-        $("#comdata").select2({  width: '100%', height: '100%' });
-        $("#ecat").select2({  width: '100%', height: '100%' });
-        $("#etyp").select2({  width: '100%', height: '100%' });
-    }
+        }
     }); 
 }
 function showdist(stid){
@@ -340,10 +324,13 @@ function callsts(cstsid){
   function subfeedbackdata(){
       //alert('Subpro Data');
       /*validation start*/
-      
-      
+      var cls_rem=$("#fed-cc-remarks").val();
+      var cls_agr=$("#fed-satisfy").val();
+      if(!cls_rem){alert('Closure remarks required'); return false;}
+      if(!cls_agr){alert('Select Farmer Satisfiction'); return false;}
       var serlizedata = $("#clfrm").serialize();
-      console.log(serlizedata);
+     //alert(serlizedata);
+     //return false;
       var url="index.php?route=call/feedback/savefeedback";
       console.log(url);
      

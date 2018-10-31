@@ -1,0 +1,66 @@
+2018-01-27 4:39:46 - Array
+(
+    [call-sts] => 4
+    [emp-sts] => 0
+    [del-id] => 
+    [del-firm] => 
+    [del-name] => 
+    [del-mob] => 8806804098
+    [dselst] => 
+    [dseldt] => 
+    [del-cat] => 
+    [del-add] => 
+    [del-pin] => 
+    [del-adv-code] => 
+    [del-mfm-code] => 
+    [del_remarks] => 
+    [zone] => 737
+    [region] => 751
+    [state] => 16
+    [district] => 
+    [mooffice] => 
+    [keydealeradventcode] => 
+    [keydealername] => 
+    [keydealerlocation] => 
+    [keydealermobile] => 
+    [keyretailername] => 
+    [keyretailermobile] => 
+    [keyretailerlocation] => 
+    [fmsidofdealer] => 
+    [farmerfirstname] => 
+    [farmermiddlename] => 
+    [farmerlastname] => 
+    [farmervillage] => 
+    [farmertaluka] => 
+    [farmermobile] => 8806804098
+    [email] => 
+    [isprogressivefarmer] => 
+    [majorcrop1] => 
+    [acreage1] => 
+    [majorcrop2] => 
+    [acreage2] => 
+    [majorcrop3] => 
+    [acreage3] => 
+    [irrigatedacreage] => 
+    [dripirrigatedacreage] => 
+    [rainfedacreage] => 
+    [issoiltestdone] => 
+    [yearofsoiltest] => 
+    [remarks] => 
+    [ApiFarmerCode] => NA
+    [ApiFarmerLive] => 0
+    [ApiFarmerType] => NA
+    [comcat] => 0
+    [comdata] => 0
+    [progrp] => 
+    [procat] => 
+    [pro-name] => 
+    [pro-brand] => 
+    [pro-imp] => 
+    [pro-batch] => 
+    [pro-plant] => 
+    [pro-pkg-my] => 
+    [comdtls] => 
+)
+
+2018-01-27 4:39:46 - In Single Status Section

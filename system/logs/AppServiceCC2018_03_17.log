@@ -1,0 +1,481 @@
+2018-03-17 4:22:28 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 4:42:28 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 4:44:20 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:01:39 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:30:56 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:34:20 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:34:56 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:35:28 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:38:35 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:47:47 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 5:51:59 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:45:12 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:49:48 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:51:28 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:53:56 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:54:56 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:56:05 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:56:59 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:57:01 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 6:57:50 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 7:02:18 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 7:02:55 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 7:04:18 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 7:04:20 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 7:04:41 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 9:47:18 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 9:50:37 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 9:56:39 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:20:32 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:24:54 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:31:04 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:34:08 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10)
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:40:02 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10) AND ServiceStatus=0
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 10:40:03 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=10) AND ServiceStatus=0
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 11:11:49 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 11:18:02 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC
+2018-03-17 11:18:08 - SELECT SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE' 
+                    WHEN ServiceType=2 THEN 'ADVISORY' 
+                    WHEN ServiceType=3 THEN 'PURCHASE' 
+                    WHEN ServiceType=4 THEN 'OTHER' 
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            WHERE StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) AND ServiceStatus=0
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC

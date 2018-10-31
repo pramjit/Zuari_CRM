@@ -1,0 +1,22 @@
+2018-05-08 4:53:51 - SELECT app_services.SID,
+            (CASE 
+                    WHEN ServiceType=1 THEN 'SERVICE QUERY' 
+                    WHEN ServiceType=2 THEN 'ASK OUR EXPERT' 
+                    WHEN ServiceType=3 THEN 'PURCHASE INTEREST' 
+                    WHEN ServiceType=4 THEN 'SOIL TEST' 
+                    WHEN ServiceType=5 THEN 'LEAF TEST' 
+                    WHEN ServiceType=6 THEN 'WATER TEST'
+                    ELSE 'OTHER' 
+            END) AS 'SER',
+            Mobile AS 'MOB', 
+            ARC.RTLR_CODE AS 'PIN',ARC.CALL_COUNT AS 'TOT_ATTEMPT',
+            DATE_FORMAT(CrDate,'%d-%m-%Y') AS 'CR_DATE' 
+            FROM app_services 
+            LEFT JOIN ak_retailers_call ARC ON(ARC.MOBILE_NO=app_services.Mobile AND ARC.CALL_TYPE=3 )
+            WHERE 
+                StateId IN(SELECT state_id FROM ak_agent_geo WHERE cc_agent_id=17) 
+		AND ServiceStatus=0 
+		AND ServiceType NOT IN(2,3,4) 
+		AND ARC.CALL_COUNT < 3
+            GROUP BY ServiceType,Mobile 
+            ORDER BY CrDate DESC

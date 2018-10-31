@@ -1,0 +1,678 @@
+2018-03-17 6:50:40 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 6:50:59 - Query Data: 
+2018-03-17 6:50:59 - Query Data: 
+2018-03-17 6:54:53 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 6:54:53 - Query Data: 
+2018-03-17 6:54:53 - Query Data: 
+2018-03-17 6:56:04 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 6:56:04 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+		`ProductName`='Mango',
+		`OrderId`='55555',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111114'
+2018-03-17 7:02:53 - Form Data: Array
+2018-03-17 7:02:53 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 7:02:53 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+		`ProductName`='Mango',
+		`OrderId`='55555',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111114'
+2018-03-17 7:04:39 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 555
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111114
+    [app-up-by] => 10
+)
+
+2018-03-17 7:04:39 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 7:04:39 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+		`ProductName`='Mango',
+		`OrderId`='555',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111114'
+2018-03-17 9:51:06 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 1000
+    [app-qry] => NA
+    [app-ans] => 1
+    [app-sol] => Test Solution
+    [app-cid] => 1111111113
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 9:51:06 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 9:51:06 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 9:51:06 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='1000',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111113'
+2018-03-17 9:51:06 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 9:51:06 - Find MO ID: 89
+2018-03-17 9:51:06 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031709510661',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-03-17 09:51:06',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Solution',`COMP_SOURCE`=2
+2018-03-17 9:57:50 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 9999
+    [app-qry] => NA
+    [app-ans] => 1
+    [app-sol] => Test Query
+    [app-cid] => 1111111112
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 9:58:00 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 9:58:02 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 9:59:52 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='9999',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111112'
+2018-03-17 9:59:59 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:00:00 - Find MO ID: 89
+2018-03-17 10:00:02 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710000062',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-03-17 09:57:52',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Query',`COMP_SOURCE`=2
+2018-03-17 10:01:18 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 9999
+    [app-qry] => NA
+    [app-ans] => 1
+    [app-sol] => Test Query
+    [app-cid] => 1111111112
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:01:18 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:01:18 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:01:18 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='9999',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111112'
+2018-03-17 10:01:18 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:01:18 - Find MO ID: 89
+2018-03-17 10:01:18 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710011861',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-03-17 10:01:18',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Query',`COMP_SOURCE`=2
+2018-03-17 10:19:45 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 9999
+    [app-qry] => NA
+    [app-ans] => 1
+    [app-sol] => Test Query
+    [app-cid] => 1111111112
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:19:45 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:19:45 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:19:45 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='9999',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111112'
+2018-03-17 10:19:45 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:19:45 - Find MO ID: 89
+2018-03-17 10:19:45 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710194518',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-03-17 10:19:45',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Query',`COMP_SOURCE`=2
+2018-03-17 10:19:45 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18031710194518',`CASE_MOBILE` = '9971813600',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-17',`UPDATE_TIME` = '10:19:45'
+2018-03-17 10:21:32 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 9999
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => Test Servu
+    [app-cid] => 1111111112
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:21:32 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:21:32 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:21:32 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='9999',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111112'
+2018-03-17 10:21:32 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:21:32 - Find MO ID: 89
+2018-03-17 10:21:32 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710213261',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-17 10:21:32',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Servu',`COMP_SOURCE`=2
+2018-03-17 10:24:59 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 9999
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => Test Servu
+    [app-cid] => 1111111112
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:25:08 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:25:09 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:25:15 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='9999',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111112'
+2018-03-17 10:25:21 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:25:21 - Find MO ID: 89
+2018-03-17 10:25:24 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710252252',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-17 10:25:02',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Servu',`COMP_SOURCE`=2
+2018-03-17 10:28:21 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 2
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 1000
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111111
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:28:27 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:28:28 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:28:29 - Query Data: UPDATE app_services SET
+		`ServiceType`='2',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='1000',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111111'
+2018-03-17 10:31:10 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 2
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 1000
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111111
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:31:15 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:31:17 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:31:20 - Query Data: UPDATE app_services SET
+		`ServiceType`='2',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='1000',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111111'
+2018-03-17 10:31:27 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '',`CASE_MOBILE` = '9971813600',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-17',`UPDATE_TIME` = '10:31:11'
+2018-03-17 10:33:40 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 2
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 1000
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111111
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:33:56 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:33:56 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:33:56 - Query Data: UPDATE app_services SET
+		`ServiceType`='2',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='1000',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111111'
+2018-03-17 10:34:36 - Array
+(
+    [app-sd] => 28
+    [app-dd] => 547
+    [app-md] => 914
+    [app-usr] => Test User
+    [app-pro] => Mango
+    [app-ser] => 1
+    [app-sto] => NA
+    [app-qty] => 5.00
+    [app-odr] => 1000
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111111
+    [app-frm] => 9971813600
+    [app-up-by] => 10
+)
+
+2018-03-17 10:35:22 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='28' LIMIT 0,1
+2018-03-17 10:35:23 - Array
+(
+    [STID] => 28
+    [STNM] => UTTAR PRADESH
+)
+
+2018-03-17 10:35:25 - Query Data: UPDATE app_services SET
+		`ServiceType`='1',
+		`StateId`='28',
+		`StateName`='UTTAR PRADESH',
+                `DistrictId`='547',
+		`ProductName`='Mango',
+		`OrderId`='1000',
+		`Quantity`='5.00',
+		`CustomerName`='Test User',
+		`StoreName`='NA',
+		`UpDate`='2018-03-17',
+		`UpBy`='10',`AssignTo`='914',`ServiceStatus`=1 WHERE SID='1111111111'
+2018-03-17 10:35:27 - Find MO: select mo_user_id from crm_mo_office where district_id='547' and mo_office_geo_code='914'
+2018-03-17 10:35:28 - Find MO ID: 89
+2018-03-17 10:35:30 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18031710352895',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9971813600',
+                        `CR_BY` ='10',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='914',
+                        `COMP_MO` ='89',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-17 10:34:39',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-17',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-17 10:35:35 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18031710352895',`CASE_MOBILE` = '9971813600',`CR_BY` = '10',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-17',`UPDATE_TIME` = '10:34:39'

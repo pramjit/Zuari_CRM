@@ -266,7 +266,7 @@ public function complist(){
     public function retrivedata(){
         $this->load->model('call/feedback');
         $FeedFarData=$this->model_call_feedback->FeedFarData($this->request->post);
-        $CallSts= $this->model_call_feedback->CallSts();
+       /*$CallSts= $this->model_call_feedback->CallSts();
         $CallUsr= $this->model_call_feedback->CallUsr();
         $StateData= $this->model_call_feedback->StateData();
         $DistData= $this->model_call_feedback->DistData($FeedFarData['STATE_ID']);
@@ -275,254 +275,83 @@ public function complist(){
         $ProdData= $this->model_call_feedback->ProdData($FeedFarData['PROD_CATG']);
         $CompCatData= $this->model_call_feedback->CompCatData();
         $CompData= $this->model_call_feedback->CompData($FeedFarData['COMP_CATG']);
-        
+        */
         echo '<div class="col-sm-8">';
         echo '<form name="callform" id="clfrm">';
         echo '<div class="table-responsive">';
-            echo '<div class="form-group" id="formdata">';
-            echo '<label class="col-md-2 btn-default">STATUS</label>';
-            echo '<div class="col-md-3">';
-            echo '<select id="call-sts" name="call-sts" class="form-control"  onchange="callsts(this.value);" disabled="disabled">';
-                echo '<option value="0">Select</option>';
-                foreach($CallSts as $sts){ 
-                            if($FeedFarData['CALL_STATUS']==$sts['STATUS_ID'])
-                            {
-                                $sel="selected='selected'";
-                            }
-                            else {
-                                $sel="";
-                            }
-                            echo '<option value="'.$sts['STATUS_ID'].'"'.$sel.'>'.$sts['STATUS_NAME'].'</option>';
-                }
-                echo '</select>';
-                echo '</div>';
-                echo '<div class="pro-act">';
-                echo '<label class="col-md-2 btn-default" for="selectbasic">USER</label>';
-                echo '<div class="col-md-3">';
-                echo '<select id="emp-sts" name="emp-sts" class="form-control" onchange="empsts(this.value);" disabled="disabled">';
-                echo '<option value="0">Select</option>';
-                foreach($CallUsr as $usr){ 
-                            if($FeedFarData['EMP_STATUS']==$usr['SID'])
-                            {
-                                $sel="selected='selected'";
-                            }
-                            else {
-                                $sel="";
-                            }
-                            echo '<option value="'.$usr['SID'].'"'.$sel.'>'.$usr['NAME'].'</option>';
-                        }
-                echo '</select>';
-                echo '</div>';
-                echo '<div class="col-md-2">';
-                echo '<input type="button" class="btn btn-primary subprodata" value="SUBMIT" onclick="subfeedbackdata();">';
-                echo '</div>';
-                echo '</div>';
-                echo '</div>';
-                echo '<div class="clearfix"><br/><hr/><br/></div>';
-                echo '<div id="exTab1" class="formdata-sub">';
-                echo '<ul  class="nav nav-pills">';
-                echo '<li class="active" id="A">';
-                echo '<a href="#1a" data-toggle="tab">PROFILE DETAILS</a>';
-                echo '</li>';
-                echo '<li id="B">';
-                echo '<a href="#2a" data-toggle="tab">COMPLAINT DETAILS</a>';
-                echo '</li>';
-                echo '</ul>';
-                echo '<div class="tab-content clearfix" style="padding: 0px!important;">';
-                echo '<div class="tab-pane active" id="1a">';
-                    echo '<fieldset class="far-tab">';
+                    
                     echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-name" name="far-name" type="text" placeholder="Name" value="'.$FeedFarData['FAR_NAME'].'" class="form-control input-md" disabled="disabled">';
+                    echo '<fieldset style="background: #337ab7;color: #ffffff;">';
+                    echo '<label class="col-md-3">CASE ID</label>';
+                    echo '<label class="col-md-3">CREATE DATE</label>';
+                    echo '<label class="col-md-6 text-center">FARMER QUERY</label>';
+                    echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-fa-name" name="far-fa-name" type="text" placeholder="Father Name" value="'.$FeedFarData['FAR_FAT_NAME'].'"class="form-control input-md" disabled="disabled">';
-                    echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-mob" name="far-mob" type="text" placeholder="Mobile" value="'.$FeedFarData['FAR_MOBILE'].'"  class="form-control input-md" disabled="disabled">';
-                    echo '</div>';
-                    echo '</div>';
+        
+        
                     echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
-                    echo '<select id="selst" name="selst" class="form-control select2" onchange="showdist(this.value);" disabled="disabled">';
-                    echo '<option value="">Select State</option>';
-                             foreach($StateData as $state){ 
-                                    if($FeedFarData['STATE_ID']==$state['GEO_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                    echo '<option value="'.$state['GEO_ID'].'"'.$sel.'>'.$state['NAME'].'</option>';
-                                    }
-                    echo '</select>';
+                    echo '<fieldset style>';
+                    echo '<label class="col-md-3">'.$FeedFarData['COMP_FAR'].'</label>';
+                    echo '<label class="col-md-3">'.$FeedFarData['COMP_DATE'].'</label>';
+                    echo '<label class="col-md-6">'.$FeedFarData['COMP_QRY'].'</label>';
+                    echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="col-md-4" id="dist-data">';
-                    echo '<select id="seldt" name="seldt" class="form-control select2-selection--single" disabled="disabled">';
-                    echo '<option value="">Select District</option>';
-                          foreach($DistData as $dist){ 
-                                    if($FeedFarData['DISTRICT_ID']==$dist['GEO_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                    echo '<option value="'.$dist['GEO_ID'].'"'.$sel.'>'.$dist['NAME'].'</option>';
-                                    }         
-                    echo '</select>';
-                    echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-add" name="far-add" type="text" placeholder="Address" value="'.$FeedFarData['ADDRESS'].'" class="form-control input-md" disabled="disabled">';
-                    echo '</div>';
-                    echo '</div>';
-                        
+                    
                     echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-pin" name="far-pin" type="text" placeholder="Pincode" value="'.$FeedFarData['PIN_CODE'].'" class="form-control input-md" disabled="disabled">';
+                    echo '<fieldset style="background: #337ab7;color: #ffffff;">';
+                    echo '<label class="col-md-3">RA NAME</label>';
+                    echo '<label class="col-md-3">RA DATE</label>';
+                    echo '<label class="col-md-6 text-center">RA COMMENT</label>';
+                    echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-alt-no" name="far-alt-no" type="text" placeholder="Alt. Contact Number" value="'.$FeedFarData['FAR_ALT_NUMBER'].'" class="form-control input-md" disabled="disabled">';
-                    echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<select id="crop1" name="crop1" class="form-control select2" disabled="disabled">';
-                    echo '<option value="">Select Crop-I</option>';
-                            foreach($CropData as $crop){
-                                    if($FeedFarData['RABI_CROP']==$crop['CROP_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                    echo '<option value="'.$crop['CROP_ID'].'"'.$sel.'>'.$crop['CROP_DESC'].'</option>';
-                                    }
-                    echo '</select>';
-                    echo '</div>';
-                    echo '</div>';
+                    
+                    
                     echo '<div class="form-group">';
-                           
-                    echo '<div class="col-md-4">';
-                    echo '<input id="corp1-acr" name="corp1-acr" type="text" placeholder="Acreage"  value="'.$FeedFarData['RABI_ACERAGE'].'"class="form-control input-md" disabled="disabled">';
+                    echo '<fieldset>';
+                    echo '<label class="col-md-3">'.$FeedFarData['RA_NAME'].'</label>';
+                    echo '<label class="col-md-3">'.$FeedFarData['RA_DATE'].'</label>';
+                    echo '<label class="col-md-6">'.$FeedFarData['RA_REMARKS'].'</label>';
+                    echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<select id="crop2" name="crop2" class="form-control select2" disabled="disabled">';
-                    echo '<option value="">Select Crop-II</option>';
-                            foreach($CropData as $crop){
-                                    if($FeedFarData['KHARIF_CROP']==$crop['CROP_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                    echo '<option value="'.$crop['CROP_ID'].'"'.$sel.'>'.$crop['CROP_DESC'].'</option>';
-                                    }
-                    echo '</select>';
-                    echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="crop2-acr" name="crop2-acr" type="text" placeholder="Acreage" value="'.$FeedFarData['KHARIF_ACERAGE'].'"class="form-control input-md" disabled="disabled">';
-                    echo '</div>';
-                    echo '</div>';
-                        
+                    
+                    
                     echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
-                    echo '<input id="far-tot-acr" name="far-tot-acr" type="text" placeholder="Total Acreage" value="'.$FeedFarData['ACERAGE'].'" class="form-control input-md" disabled="disabled">';
+                    echo '<fieldset style="background: #337ab7;color: #ffffff;">';
+                    echo '<label class="col-md-3">AA NAME</label>';
+                    echo '<label class="col-md-3">AA DATE</label>';
+                    echo '<label class="col-md-6 text-center">AA COMMENT</label>';
+                    echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="col-md-8">';
-                    echo '<textarea class="form-control" id="far-remarks" name="far-remarks" disabled="disabled">'.$FeedFarData['FAR_REMARKS'].'</textarea>';
-                    echo '</div>';
-                    echo '</div>';
+                    
                     echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
+                    echo '<fieldset>';
+                    echo '<label class="col-md-3">'.$FeedFarData['AA_NAME'].'</label>';
+                    echo '<label class="col-md-3">'.$FeedFarData['AA_DATE'].'</label>';
+                    echo '<label class="col-md-6">'.$FeedFarData['AA_REMARKS'].'</label>';
+                    echo '</fieldset>';
+                    echo '</div>';
+                    
+                    
+                    echo '<div class="form-group">';
+                    echo '<fieldset>';
+                    echo '<div class="col-md-6" >';
+                    echo '<input id="fed-case-id" name="fed-case-id" type="hidden" placeholder="Total Acreage" value="'.$FeedFarData['COMP_FAR'].'" class="form-control input-md">';
+                    echo '<input id="fed-case-mob" name="fed-case-mob" type="hidden" placeholder="Total Acreage" value="'.$FeedFarData['COMP_MOB'].'" class="form-control input-md">';
+                    echo '<textarea class="form-control" id="fed-cc-remarks" name="fed-cc-remarks" placeholder="Remarks..."></textarea>';
+                    echo '</div>';
+                    echo '<div class="col-md-3" style="margin-top: 30px;">';
                     echo '<select id="fed-satisfy" name="fed-satisfy" class="form-control">';
-                    echo '<option value="">Select Satisfication</option>';
+                    echo '<option value="">Farmer Satisfication</option>';
                     echo '<option value="1">Yes - Satisfy</option>';
                     echo '<option value="2">No - Un-Satisfy</option>';
                     echo '</select>';
                     echo '</div>';
-                    echo '<div class="col-md-8">';
-                    echo '<input id="fed-case-id" name="fed-case-id" type="hidden" placeholder="Total Acreage" value="'.$FeedFarData['CASE_ID'].'" class="form-control input-md">';
-                    echo '<textarea class="form-control" id="fed-cc-remarks" name="fed-cc-remarks" placeholder="Remarks..."></textarea>';
-                    echo '</div>';
-                    echo '</div>';
+                   
+                    echo '<label class="col-md-3 btn btn-primary" style="margin-top: 32px;" onclick="subfeedbackdata();">SUBMIT</label>';
+                  
                     echo '</fieldset>';
                     echo '</div>';
-                    echo '<div class="tab-pane" id="2a">';
-                    echo '<fieldset>';
-                    echo '<div class="form-group">';
-                    echo '<div class="col-md-4">';
-                    echo '<select id="procat" name="procat" class="form-control select2" onchange="showpro(this.value);" disabled="disabled">';
-                    echo '<option value="0">Select Product Category</option>';
-                            foreach($ProdCatData as $pcat){
-                                if($FeedFarData['PROD_CATG']==$pcat['PRODUCT_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                echo '<option value="'.$pcat['PRODUCT_ID'].'"'.$sel.'>'.$pcat['PRODUCT_DESC'].'</option>';
-                            }
-                    echo '</select>';
-                    echo '</div>';
-                    echo '<div class="col-md-4" id="prod-data">';
-                    echo '<select id="prodata" name="prodata" class="form-control select2" disabled="disabled">';
-                    echo '<option value="0">Select Product</option>';
-                             foreach($ProdData as $prod){
-                                if($FeedFarData['PROD_ID']==$prod['PRODUCT_ID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                echo '<option value="'.$prod['PRODUCT_ID'].'"'.$sel.'>'.$prod['PRODUCT_DESC'].'</option>';
-                            }
-                    echo '</select>';
-                    echo '</div>';
-                    echo '<div class="col-md-4">';
-                    echo '<select id="comcat" name="comcat" class="form-control select2" onchange="showcomp(this.value);" disabled="disabled">';
-                    echo '<option value="0">Complaint Category</option>';
-                            foreach($CompCatData as $comp){
-                                if($FeedFarData['COMP_CATG']==$comp['SID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                echo '<option value="'.$comp['SID'].'"'.$sel.'>'.$comp['COMP_CATG'].'</option>';
-                            }
-                    echo '</select>';
-                    echo '</div>';
-                    echo '</div>';
-                    echo '<div class="form-group">';
-                    echo '<div class="col-md-4" id="comp-data">';
-                    echo '<select id="comdata" name="comdata" class="form-control select2" disabled="disabled">';
-                    echo '<option value="0">Complaint Sub Category</option>';
-                    foreach($CompData as $comp){
-                           if($FeedFarData['COMP_TYPE']==$comp['SID'])
-                                    {
-                                        $sel="selected='selected'";
-                                    }
-                                    else {
-                                        $sel="";
-                                    }
-                                echo '<option value="'.$comp['SID'].'"'.$sel.'>'.$comp['COMP_CATG'].'</option>';
-                            }
                     
-                    echo '</select>';
-                    echo '</div>';
-                    echo '<div class="col-md-8">';
-                    echo '<textarea class="form-control" id="comdtls" name="comdtls" disabled="disabled">'.$FeedFarData['COMPLAINT_REMARKS'].'</textarea>';
-                    echo '</div>';
-                    echo '</div>';
-                    echo '</fieldset>';
-                    echo '</div>';
-                  echo '</div>';
-              echo '</div>';
            echo '</div>';
         echo '</form>';
       echo '</div>';

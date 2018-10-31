@@ -419,9 +419,14 @@
                                     <span>ADVISORY CALL </span>
                                 </a>
                                 </li>
-								<li>
+				<li>
                                 <a href='<?php echo $otherscall; ?>'>
                                     <span>OTHERS CALL </span>
+                                </a>
+                                </li>
+                                <li>
+                                <a href='<?php echo $appserdata; ?>'>
+                                    <span>APP SERVICE DATA </span>
                                 </a>
                                 </li>
                                 </ul>

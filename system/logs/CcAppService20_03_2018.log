@@ -1,0 +1,1022 @@
+2018-03-20 9:37:03 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:03 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:03 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:03 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:03 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:03 - Find MO ID: 
+2018-03-20 9:37:03 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009370394',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:03',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:04 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009370394',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:03'
+2018-03-20 9:37:29 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:29 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:29 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:29 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:30 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:30 - Find MO ID: 
+2018-03-20 9:37:30 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373002',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:29',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:30 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373002',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:29'
+2018-03-20 9:37:31 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:31 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:31 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:31 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:32 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:32 - Find MO ID: 
+2018-03-20 9:37:32 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373211',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:31',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:32 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373211',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:31'
+2018-03-20 9:37:32 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:32 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:32 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:32 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:32 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:32 - Find MO ID: 
+2018-03-20 9:37:32 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373247',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:32',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:32 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373247',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:32'
+2018-03-20 9:37:32 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:32 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:32 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:32 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:32 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:32 - Find MO ID: 
+2018-03-20 9:37:32 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373294',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:32',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:32 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373294',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:32'
+2018-03-20 9:37:33 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:33 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:33 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:33 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:33 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:33 - Find MO ID: 
+2018-03-20 9:37:33 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373345',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:33',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:33 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373345',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:33'
+2018-03-20 9:37:33 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:33 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:33 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:33 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:34 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:34 - Find MO ID: 
+2018-03-20 9:37:34 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373403',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:33',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:34 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373403',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:33'
+2018-03-20 9:37:34 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:34 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:34 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:34 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:34 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:34 - Find MO ID: 
+2018-03-20 9:37:34 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373433',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:34',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:34 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373433',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:34'
+2018-03-20 9:37:34 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:34 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:34 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:34 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:34 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:34 - Find MO ID: 
+2018-03-20 9:37:34 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373459',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:34',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:34 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373459',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:34'
+2018-03-20 9:37:34 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:34 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:34 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:34 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:34 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:34 - Find MO ID: 
+2018-03-20 9:37:34 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373480',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:34',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:34 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373480',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:34'
+2018-03-20 9:37:35 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:35 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:35 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:35 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:35 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:35 - Find MO ID: 
+2018-03-20 9:37:35 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373533',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:35',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:35 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373533',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:35'
+2018-03-20 9:37:35 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:35 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:35 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:35 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:36 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:36 - Find MO ID: 
+2018-03-20 9:37:36 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373613',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:35',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:36 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373613',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:35'
+2018-03-20 9:37:36 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 351
+    [app-md] => 53
+    [app-usr] => Mobile
+    [app-pro] => Jai Kisaan Urea - Neem Coated
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 2
+    [app-sol] => 
+    [app-cid] => 1111111123
+    [app-frm] => 9130487492
+    [app-up-by] => 17
+)
+
+2018-03-20 9:37:36 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:37:36 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:37:36 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='351',
+		`ProductName`='Jai Kisaan Urea - Neem Coated',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='53',`ServiceStatus`=1 WHERE SID='1111111123'
+2018-03-20 9:37:36 - Find MO: select mo_user_id from crm_mo_office where district_id='351' and mo_office_geo_code='53'
+2018-03-20 9:37:36 - Find MO ID: 
+2018-03-20 9:37:36 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009373635',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='9130487492',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='53',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='2',
+                        `CR_DATE`='2018-03-20 09:37:36',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='2',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='NA',`COMP_SOURCE`=2
+2018-03-20 9:37:36 - CASE_TRANS: insert into crm_status_trans set 
+                        `CASE_ID` = '18032009373635',`CASE_MOBILE` = '9130487492',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:37:36'
+2018-03-20 9:42:09 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 365
+    [app-md] => 85
+    [app-usr] => Mobile
+    [app-pro] => CHEMFREE VAMAX
+    [app-ser] => 3
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 1
+    [app-sol] => Test Answer
+    [app-cid] => 1111111124
+    [app-frm] => 7066005626
+    [app-up-by] => 17
+)
+
+2018-03-20 9:42:09 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-03-20 9:42:09 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-03-20 9:42:09 - Query Data: UPDATE app_services SET
+		`ServiceType`='3',
+		`StateId`='16',
+		`StateName`='MAHARASHTRA',
+                `DistrictId`='365',
+		`ProductName`='CHEMFREE VAMAX',
+		`OrderId`='0',
+		`Quantity`='0.00',
+		`CustomerName`='Mobile',
+		`StoreName`='NA',
+		`UpDate`='2018-03-20',
+		`UpBy`='17',`AssignTo`='85',`ServiceStatus`=1 WHERE SID='1111111124'
+2018-03-20 9:42:09 - Find MO: select mo_user_id from crm_mo_office where district_id='365' and mo_office_geo_code='85'
+2018-03-20 9:42:09 - Find MO ID: 
+2018-03-20 9:42:09 - CRM_NON_ENTRY: insert into `crm_case` set
+                        `CASE_ID`='18032009420927',
+                        `ADV_CASE_PIN` ='0',
+                        `COMP_MOBILE` ='7066005626',
+                        `CR_BY` ='17',
+                        `PROD_GROUP`= '0',
+                        `PROD_ID` ='0',
+                        `PROD_CATG` ='0',
+                        `PROD_BRAND`='NA',
+                        `PROD_IMP`='0',
+                        `PROD_BATCH`='NA',
+                        `PROD_PLANT`='NA',
+                        `PROD_PAKG`='NA',
+                        `COMP_CATG` ='NA',
+                        `COMP_TYPE` ='NA',
+                        `COMP_RA` ='0',
+                        `COMP_AA` ='0',
+                        `COMP_ADV` ='0',
+                        `ZO_ID` ='0',
+                        `RO_ID` ='0',
+                        `TERR_ID` ='0',
+                        `MO_ID` ='85',
+                        `COMP_MO` ='0',
+                        `CR_SOURCE` ='2',
+                        `IS_COMP_SOL`='1',
+                        `CR_DATE`='2018-03-20 09:42:09',
+                        `CASE_STATUS`='7',
+                        `CASE_PRIO` ='1',
+                        `DUE_DATE` ='2018-03-20',
+                        `COMPLAINT_QUERY` ='NA',
+                        `COMPLAINT_REMARKS` ='Test Answer',`COMP_SOURCE`=2
+2018-03-20 9:42:09 - CASE_TRANS: insert into crm_status_trans set 
+                                   `CASE_ID` = '18032009420927',`CASE_MOBILE` = '7066005626',`CR_BY` = '17',`FROM_STATUS` = '18',`TO_STATUS` = '101',`UPDATE_DATE` = '2018-03-20',`UPDATE_TIME` = '09:42:09'

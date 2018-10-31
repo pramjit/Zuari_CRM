@@ -73,9 +73,8 @@
             <tr>
                 <th>CASE ID</th>
                 <th>MOBILE</th>
-		<th>STATE</th>
+				<th>STATE</th>
                 <th>PIN</th>
-                <th class="text-center">RE-ASSIGN</th>
                 <!--<th>STATUS</th>-->
             </tr>
         </thead>
@@ -86,11 +85,11 @@
             foreach($AdvData as $result)
             {
             echo "<tr>";
-            echo "<td class='text-center' style='cursor: pointer; font-weight:bold; color:blue;' onclick='showform(".$result['CASE_ID'].");'><button class='btn btn-success'><i class='fa fa-forward' aria-hidden='true'></i>&nbsp;".$result['CASE_ID']."</button></td>";
+            echo "<td class='text-center' style='cursor: pointer; font-weight:bold; color:blue;' onclick='showform(".$result['CASE_ID'].");'>".$result['CASE_ID']."</td>";
             echo "<td>".$result['FAR_MOB']."</td>";
-	    echo "<td>".$result['STATE']."</td>";
+			echo "<td>".$result['STATE']."</td>";
             echo "<td>".$result['CASE_PIN']."</td>";
-            echo "<td class='text-center' style='cursor: pointer; font-weight:bold; color:blue;' onclick='reAssign(".$result['CASE_ID'].");'><button class='btn btn-warning'><i class='fa fa-reply-all' aria-hidden='true'></i></button></td>";
+            
             echo "</tr>";
             }
            ?>
@@ -510,25 +509,5 @@ function SaveFeedback(){
   }
   function PlayAudio(){
   $('#myModal').modal('show');
-  }
-  function reAssign(csid){
-    
-    if (confirm("Confirm Re-assign Case to Advisory!") == true) {
-        alert(csid);
-        $.ajax({
-            type: "POST",
-            url: "index.php?route=call/advisory/reassign",
-            data: "caseid="+csid,
-            dataType: "text",
-            success: function( data ) {
-                alert(data);
-           
-            }
-        });
-    } 
-    else {
-        alert('Canceled By User.');
-        return false;
-    }
   }
 </script> 

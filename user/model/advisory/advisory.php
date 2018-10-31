@@ -4,7 +4,9 @@ class Modeladvisoryadvisory extends Model {
     
     public function AdvData($data){
 	$cr_by = $this->customer->getId();
-    $sql="select CALL_STATUS,CASE_ID,FAR_MOB,CASE_PIN,CALL_COUNT, DATE_FORMAT(CR_DATE,'%d-%m-%Y') AS CR_DATE from crm_adv where case_status in (4,6,7,11,22,23) and adv_id='".$cr_by."' and CALL_COUNT<3 ORDER BY CR_DATE DESC ";
+    $sql="SELECT CALL_STATUS,CASE_ID,FAR_MOB,CASE_PIN,CALL_COUNT, DATE(CR_DATE) AS 'CR_DATE'
+FROM crm_adv WHERE case_status IN (4,6,7,11,22,23) AND adv_id='".$cr_by."'
+AND CALL_COUNT<3 GROUP BY CASE_PIN ORDER BY DATE(CR_DATE) DESC";
     $query = $this->db->query($sql);
     return $query->rows;   
         

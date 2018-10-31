@@ -1,0 +1,54 @@
+2018-05-18 4:45:23 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 
+    [app-md] => 
+    [app-usr] => Mobile
+    [app-pro] => NA
+    [app-ser] => 5
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 
+    [app-sol] => 
+    [app-cal] => 2
+    [app-cid] => 1111111539
+    [app-frm] => 7776958943
+    [app-up-by] => 17
+)
+
+2018-05-18 4:45:23 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-05-18 4:45:23 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+
+2018-05-18 4:47:15 - Array
+(
+    [app-sd] => 16
+    [app-dd] => 
+    [app-md] => 
+    [app-usr] => Mobile
+    [app-pro] => NA
+    [app-ser] => 6
+    [app-sto] => NA
+    [app-qty] => 0.00
+    [app-odr] => 0
+    [app-qry] => NA
+    [app-ans] => 
+    [app-sol] => 
+    [app-cal] => 2
+    [app-cid] => 1111111319
+    [app-frm] => 8208269850
+    [app-up-by] => 17
+)
+
+2018-05-18 4:47:15 - State Data: SELECT IFNULL(GEO_ID,728) AS 'STID', IFNULL(`NAME`,'OTHER') AS 'STNM' FROM mas_pol_geo WHERE GEO_ID='16' LIMIT 0,1
+2018-05-18 4:47:15 - Array
+(
+    [STID] => 16
+    [STNM] => MAHARASHTRA
+)
+

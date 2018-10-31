@@ -20,8 +20,8 @@ class ControllerCommonMenu extends Controller {
                 $data['missedcalldata'] = $this->url->link('call/missedcall', 'token='.$this->session->data['token'], 'SSL');
                 $data['feedbackdata'] = $this->url->link('call/feedback', 'token='.$this->session->data['token'], 'SSL');
                 $data['reviewdata'] = $this->url->link('call/review', 'token='.$this->session->data['token'], 'SSL');
-				$data['advisorydata'] = $this->url->link('call/advisory', 'token='.$this->session->data['token'], 'SSL');
-
+		$data['advisorydata'] = $this->url->link('call/advisory', 'token='.$this->session->data['token'], 'SSL');
+                $data['appserdata'] = $this->url->link('call/appservice', 'token='.$this->session->data['token'], 'SSL');
                 /*
                 $data['COM_DASHBOARD'] = $this->url->link('complaint/dashboard', 'token='.$this->session->data['token'], 'SSL');
                 $data['COM_MY_CASES'] = $this->url->link('complaint/mycases', 'token='.$this->session->data['token'], 'SSL');

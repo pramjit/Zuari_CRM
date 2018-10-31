@@ -85,34 +85,34 @@
     color: #FFF !important;
 }
 .bg-green, .callout.callout-success, .alert-success, .label-success, .modal-success .modal-body {
-    background-color: #00A65A !important;
+    background-color: #00A65A !important;color: #ffffff;
 }
 .bg-yellow, .callout.callout-warning, .alert-warning, .label-warning, .modal-warning .modal-body {
-    background-color: #F39C12 !important;
+    background-color: #F39C12 !important; color: #ffffff;
 }
 .bg-red, .callout.callout-danger, .alert-danger, .alert-error, .label-danger, .modal-danger .modal-body {
-    background-color: #DD4B39 !important;
+        background-color: #777777 !important;    color: #ffffff;
 }
 </style>
 <!-- Main Container Start -->
     <!-- Top Bar Starts -->
  <div id="content">
     <div class="top-bar clearfix">
-        <div class="page-title">
+         <!--   <div class="page-title">
 	<h4><div class="fs1" aria-hidden="true" data-icon="&#xe007;"></div>Dashboard</h4>
 	</div>
         <ul class="right-stats hidden-xs" id="mini-nav-right">
-      <button type="button" onclick="backbtn();"   data-toggle="tooltip" title="<?php echo $button_back; ?>" class="btn btn-default">
+    <button type="button" onclick="backbtn();"   data-toggle="tooltip" title="<?php echo $button_back; ?>" class="btn btn-default">
         <i class="fa fa-reply">
         </i>
       </button>
-    <!--  <button type="button" onclick="download()"   data-toggle="tooltip" title="Download" class="btn btn-download">
+    <button type="button" onclick="download()"   data-toggle="tooltip" title="Download" class="btn btn-download">
         <i class="fa fa-download">
         </i>
-      </button>-->
+      </button>
     </ul>
        
-    </div>
+    </div>-->
      
 <!-- Top Bar Ends -->
 
@@ -140,21 +140,91 @@
     </div>
     <?php } ?>
  <!--Start Body -->
-       
-          <div class="row">
-    
+        <div class="row">
+        <!-- ==========================================TOTAL CALL ========================================== -->
           <div class="col-md-3 col-sm-6 col-xs-12">
             <div class="info-box bg-aqua">
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
                 <span class="info-box-text">Missed Call </span>
                 <span class="info-box-number">
-                    <?php  foreach($Allmissedcall as $result){ echo $result; }?></span>
+                    <?php  echo $Allmissedcall; ?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
                 <span class="progress-description">
-                  Total Calls
+                  Total Incoming Calls
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+        <!-- ==========================================TOTAL ADVISORY CALL ========================================== -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-yellow">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Advisory Call</span>
+                <span class="info-box-number"> <?php echo $AdvisoryCall; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Direct Call
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+         <!-- ==========================================TOTAL COMPLAINT CALL ========================================== -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-red">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Farmer Call</span>
+                <span class="info-box-number"><?php echo $ComplainCall; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Direct Call
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+           <!-- ==========================================TOTAL ANSWERED CALL ========================================== -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Answered Call</span>
+                <span class="info-box-number"><?php  echo $AnsweredCall; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                Total Calls
+                </span>
+              </div>
+              
+              <!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+        </div>
+        <br />
+         <!-- ========================================== STAGE -2  ========================================== -->
+        <div class="row">
+    
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-yellow">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Advisory Call </span>
+                <span class="info-box-number">
+                    <?php  echo $AltAdvisoryCall; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Redirect Calls
                 </span>
               </div><!-- /.info-box-content -->
             </div><!-- /.info-box -->
@@ -163,8 +233,8 @@
             <div class="info-box bg-green">
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
-                <span class="info-box-text">Call Answered</span>
-                <span class="info-box-number"> <?php  foreach($ReceivedCall as $result){ echo $result; }?></span>
+                <span class="info-box-text">Dunning Call</span>
+                <span class="info-box-number"> <?php echo $DunningCall; ?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
@@ -175,11 +245,11 @@
             </div><!-- /.info-box -->
           </div><!-- /.col -->
           <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="info-box bg-yellow">
+            <div class="info-box bg-aqua">
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
-                <span class="info-box-text">Call Advisory</span>
-                <span class="info-box-number"><?php  foreach($AdvisoryCall as $result){ echo $result; }?></span>
+                <span class="info-box-text">App Service</span>
+                <span class="info-box-number"><?php echo $AppCall; ?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
@@ -194,8 +264,8 @@
             <div class="info-box bg-red">
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
-                <span class="info-box-text">Complain Call</span>
-                <span class="info-box-number"><?php  foreach($ComplainCall as $result){ echo $result; }?></span>
+                <span class="info-box-text">Retailer Call</span>
+                <span class="info-box-number"><?php echo $RetCall; ?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
@@ -208,7 +278,76 @@
             </div><!-- /.info-box -->
           </div><!-- /.col -->
         </div>
-        <br>
+        <br />
+        <!-- ========================================== STAGE -3  ========================================== -->
+        <div class="row">
+    
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-yellow">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Advisory Answered </span>
+                <span class="info-box-number">
+                    <?php  echo $AltAdvisoryCallAns; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Total Calls
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-green">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Dunning Answered</span>
+                <span class="info-box-number"> <?php echo $DunningCallAns; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Total Calls
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-aqua">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">App Service Answered</span>
+                <span class="info-box-number"><?php echo $AppCallAns; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                  Total Calls
+                </span>
+              </div><!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+       
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="info-box bg-red">
+              <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
+              <div class="info-box-content">
+                <span class="info-box-text">Retailer Answered</span>
+                <span class="info-box-number"><?php echo $RetCallAns; ?></span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 70%"></div>
+                </div>
+                <span class="progress-description">
+                Total Calls
+                </span>
+              </div>
+              
+              <!-- /.info-box-content -->
+            </div><!-- /.info-box -->
+          </div><!-- /.col -->
+        </div>
+        <br />
         <div class="row">
     
      
@@ -219,7 +358,7 @@
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
                 <span class="info-box-text">Missed Call In &nbsp;<?php echo date('F Y'); ?></span>
-                <span class="info-box-number"><?php if(empty($missedmonth)){ echo '0';} else {foreach($missedmonth as $result){ echo $result; }}?></span>
+                <span class="info-box-number"><?php echo $CurMissed; ?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
@@ -234,7 +373,7 @@
               <span class="info-box-icon"><i class="fa fa-phone-square"></i></span>
               <div class="info-box-content">
                 <span class="info-box-text">Call Answered In &nbsp;<?php echo date('F Y'); ?></span>
-                <span class="info-box-number"><?php if(empty($receivedmonth)){ echo '0';} else {  foreach($receivedmonth as $result){ echo $result; }}?></span>
+                <span class="info-box-number"><?php echo $CurAnswered;?></span>
                 <div class="progress">
                   <div class="progress-bar" style="width: 70%"></div>
                 </div>
@@ -273,5 +412,5 @@
     location = url;
   }
   
-   }
+  
 </script> 

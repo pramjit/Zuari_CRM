@@ -1,0 +1,1050 @@
+2018-03-12 5:32:51 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 45498
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------50423fd910b1b19e
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqYRA4tsFzlrSWrcBUU7sAAAAAg
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520832771.5482
+            [REQUEST_TIME] => 1520832771
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 5:32:51 - 
+2018-03-12 5:32:51 - 
+2018-03-12 5:32:51 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:08:39 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => GET
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49448
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [HTTP_CONNECTION] => keep-alive
+            [HTTP_ACCEPT] => text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2
+            [HTTP_HOST] => 192.168.1.159
+            [HTTP_USER_AGENT] => Java/1.8.0_161
+            [HTTP_PRAGMA] => no-cache
+            [HTTP_CACHE_CONTROL] => no-cache
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZDl4tsFzlrSWrcBUU7vgAAAA0
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520845719.2154
+            [REQUEST_TIME] => 1520845719
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+        )
+
+)
+
+2018-03-12 9:08:39 - 
+2018-03-12 9:08:39 - 
+2018-03-12 9:08:39 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:15:19 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49824
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------6cfa46385d9b058a
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZE3uovKkK2@hcKzA5fDQAAAIs
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846046.3015
+            [REQUEST_TIME] => 1520846046
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:15:21 - 
+2018-03-12 9:15:28 - 
+2018-03-12 9:15:41 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:15:56 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49836
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------b563ab7e7732c252
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFS3TZovUtDLNHpvV7OwAAAFA
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846155.9019
+            [REQUEST_TIME] => 1520846155
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:15:56 - 
+2018-03-12 9:15:56 - 
+2018-03-12 9:15:56 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:00 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49850
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------65ec2d5098044db1
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFUItsFzlrSWrcBUU7yAAAAAo
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846160.6573
+            [REQUEST_TIME] => 1520846160
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:00 - 
+2018-03-12 9:16:00 - 
+2018-03-12 9:16:00 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:02 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49876
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------88a3a48234d77b42
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFUotsFzlrSWrcBUU7ygAAAAw
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846162.3802
+            [REQUEST_TIME] => 1520846162
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:02 - 
+2018-03-12 9:16:02 - 
+2018-03-12 9:16:02 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:03 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49902
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------17eba8a4523945c6
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFU3TZovUtDLNHpvV7PAAAAFI
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846163.6269
+            [REQUEST_TIME] => 1520846163
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:03 - 
+2018-03-12 9:16:03 - 
+2018-03-12 9:16:03 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:04 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49938
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------e23428cd13bb4ee5
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFVHTZovUtDLNHpvV7PQAAAFQ
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846164.7998
+            [REQUEST_TIME] => 1520846164
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:04 - 
+2018-03-12 9:16:04 - 
+2018-03-12 9:16:04 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:06 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49964
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------b15f11a292020ce8
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFVnTZovUtDLNHpvV7PgAAAFY
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846166.2655
+            [REQUEST_TIME] => 1520846166
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:06 - 
+2018-03-12 9:16:06 - 
+2018-03-12 9:16:06 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:19 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 49994
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------7c17d00603941385
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFY4tsFzlrSWrcBUU70AAAABc
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846179.1476
+            [REQUEST_TIME] => 1520846179
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:19 - 
+2018-03-12 9:16:19 - 
+2018-03-12 9:16:19 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:21 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50020
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------01b5da357826d482
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFZYtsFzlrSWrcBUU70gAAAAU
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846181.3446
+            [REQUEST_TIME] => 1520846181
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:21 - 
+2018-03-12 9:16:21 - 
+2018-03-12 9:16:21 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:16:22 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50046
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------5e1322aa8e046174
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFZnTZovUtDLNHpvV7PwAAAEM
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846182.948
+            [REQUEST_TIME] => 1520846182
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:16:22 - 
+2018-03-12 9:16:22 - 
+2018-03-12 9:16:22 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:17:27 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50088
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------af7fe580d1ec6b02
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFp3TZovUtDLNHpvV7QQAAAEI
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846247.0503
+            [REQUEST_TIME] => 1520846247
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:17:27 - 
+2018-03-12 9:17:27 - 
+2018-03-12 9:17:27 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:20:05 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50122
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => multipart/form-data; boundary=------------------------36a5e8bb17cd2b1c
+            [HTTP_EXPECT] => 100-continue
+            [CONTENT_LENGTH] => 481
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZFtotsFzlrSWrcBUU72wAAABA
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846262.3055
+            [REQUEST_TIME] => 1520846262
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [AppData] => {&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product Purchase Intent Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc.com\/image\/image.png&quot;,&quot;TestName&quot;:&quot;Test Mail&quot;}
+        )
+
+)
+
+2018-03-12 9:20:11 - 
+2018-03-12 9:20:11 - 
+2018-03-12 9:20:11 - {"Res":0,"Msg":"No Data Received"}
+2018-03-12 9:21:30 - Request Object
+(
+    [get] => Array
+        (
+            [route] => api/appService
+        )
+
+    [post] => Array
+        (
+            [{&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+    [cookie] => Array
+        (
+        )
+
+    [files] => Array
+        (
+        )
+
+    [server] => Array
+        (
+            [USER] => apache
+            [HOME] => /usr/share/httpd
+            [SCRIPT_NAME] => /CRM/index.php
+            [REQUEST_URI] => /CRM/index.php?route=api/appService
+            [QUERY_STRING] => route=api/appService
+            [REQUEST_METHOD] => POST
+            [SERVER_PROTOCOL] => HTTP/1.1
+            [GATEWAY_INTERFACE] => CGI/1.1
+            [REMOTE_PORT] => 50146
+            [SCRIPT_FILENAME] => /var/www/html/CRM/index.php
+            [SERVER_ADMIN] => root@localhost
+            [CONTEXT_DOCUMENT_ROOT] => /var/www/html
+            [CONTEXT_PREFIX] => 
+            [REQUEST_SCHEME] => http
+            [DOCUMENT_ROOT] => /var/www/html
+            [REMOTE_ADDR] => 192.168.1.159
+            [SERVER_PORT] => 80
+            [SERVER_ADDR] => 192.168.1.159
+            [SERVER_NAME] => 192.168.1.159
+            [SERVER_SOFTWARE] => Apache/2.4.29 (Fedora)
+            [SERVER_SIGNATURE] => 
+            [PATH] => /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin
+            [CONTENT_TYPE] => application/x-www-form-urlencoded
+            [CONTENT_LENGTH] => 339
+            [HTTP_ACCEPT] => */*
+            [HTTP_HOST] => 192.168.1.159
+            [proxy-nokeepalive] => 1
+            [UNIQUE_ID] => WqZGU@ovKkK2@hcKzA5fDwAAAI8
+            [FCGI_ROLE] => RESPONDER
+            [PHP_SELF] => /CRM/index.php
+            [REQUEST_TIME_FLOAT] => 1520846419.7667
+            [REQUEST_TIME] => 1520846419
+            [HTTPS] => 
+        )
+
+    [request] => Array
+        (
+            [route] => api/appService
+            [{&quot;ID&quot;:&quot;1&quot;,&quot;StateId&quot;:&quot;09&quot;,&quot;Mobile&quot;:&quot;9971813600&quot;,&quot;CustomerName&quot;:&quot;Test_User&quot;,&quot;ProductId&quot;:&quot;11&quot;,&quot;ProductName&quot;:&quot;Mango&quot;,&quot;StoreId&quot;:&quot;11&quot;,&quot;Quantity&quot;:&quot;5&quot;,&quot;OrderId&quot;:&quot;1000&quot;,&quot;QueryId&quot;:&quot;1&quot;,&quot;QueryText&quot;:&quot;Product_Purchase_Intent_Given&quot;,&quot;ImageUrl1&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;ImageUrl2&quot;:&quot;http:\/\/abc_com\/image\/image_png&quot;,&quot;TestName&quot;:&quot;Test_Mail&quot;}] => 
+        )
+
+)
+
+2018-03-12 9:21:34 - {"ID":"1","StateId":"09","Mobile":"9971813600","CustomerName":"Test User","ProductId":"11","ProductName":"Mango","StoreId":"11","Quantity":"5","OrderId":"1000","QueryId":"1","QueryText":"Product Purchase Intent Given","ImageUrl1":"http:\/\/abc.com\/image\/image.png","ImageUrl2":"http:\/\/abc.com\/image\/image.png","TestName":"Test Mail"}
+2018-03-12 9:21:57 - Array
+(
+    [ID] => 1
+    [StateId] => 09
+    [Mobile] => 9971813600
+    [CustomerName] => Test User
+    [ProductId] => 11
+    [ProductName] => Mango
+    [StoreId] => 11
+    [Quantity] => 5
+    [OrderId] => 1000
+    [QueryId] => 1
+    [QueryText] => Product Purchase Intent Given
+    [ImageUrl1] => http://abc.com/image/image.png
+    [ImageUrl2] => http://abc.com/image/image.png
+    [TestName] => Test Mail
+)
+
+2018-03-12 9:22:50 - {"Res":0,"Msg":"Missing mandatory pararmeters either ServiceType or StateId or Mobile"}

@@ -27,6 +27,14 @@ class Modelapiccsync extends Model {
         $query = $this->db->query($sql);
         return $query->rows;  
     }
+    public function getIncData(){
+        $log= new Log("IncData_Data.log");
+        $sql="SELECT MOBILE AS 'FAR_MOB' FROM cc_incomingcall WHERE CC_LIVE=2";
+        $log->write($sql);
+        $query = $this->db->query($sql);
+        return $query->rows;  
+    }
+
     public function UpdCcData($fmob,$FarmerCode,$FarmerLive,$FarmerType){
         $log= new Log("CcSync".date('YM_d').".log");
         $sql="update cc_incomingcall set CC_CODE='".$FarmerCode."',CC_LIVE='".$FarmerLive."',CC_TYPE='".$FarmerType."' where MOBILE='".$fmob."'";
